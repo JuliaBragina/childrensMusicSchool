@@ -1,0 +1,163 @@
+.header-second{
+  background-image: url("../img/banner_startpage.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 500px;
+  display: block;
+  position: relative;
+}
+
+.header-second__navigation{
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, 0);
+
+  width: 90%;
+  height: 60px;
+  background-color: rgba(0, 0, 0, .1);
+  box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header-second__navigation_size_mobile{
+  display: none;
+}
+
+.header-second__items{
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 45px;
+}
+
+.header-second__item{
+  list-style-type: none;
+  cursor: pointer;
+  font-size: 24px;
+  line-height: auto;
+  font-weight: 600;
+  font-family: 'Montserrat', Arial, sans-serif;
+  color: #fff;
+}
+
+.header-second__glasses{
+  background-image: url('../img/button_glasses.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 64px;
+  height: 21px;
+  object-fit: contain;
+}
+
+.header-second__glasses:hover{
+  background-image: url('../img/button_glasses_hover.svg');
+}
+
+.header-second__item:hover{
+  color: #268237;
+}
+
+.header-second__description{
+  position: absolute;
+  width: 90%;
+  background-color: #F8F8F8;
+  top: 470px;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, 0);
+}
+
+.header-second__container{
+  width: 90%;
+  margin: 0 auto;
+  padding: 45px 0;
+
+  display: grid;
+  column-gap: 20px;
+  row-gap: 10px;
+}
+
+.header-second__logoDmsh{
+  width: 173px;
+  height: 150px;
+  object-fit: contain;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.header-second__title{
+  margin: 0;
+  font-size: 32px;
+  line-height: auto;
+  font-weight: 500;
+  font-family: 'Montserrat', Arial, sans-serif;
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+
+.header-second__title_big-letters{
+  font-size: 40px;
+  line-height: 50px;
+}
+
+.header-second__slogan{
+  margin: 0;
+  font-size: 32px;
+  line-height: 46px;
+  font-weight: 400;
+  font-family: 'Montserrat', Arial, sans-serif;
+  grid-column: 1 / 3;
+  grid-row: 2 / 3;
+}
+
+@media screen and (max-width: 1280px) {
+  .header-second__item{
+    font-size: 20px;
+  }
+
+  .header-second__items{
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 940px) {
+  .header-second__item{
+    font-size: 16px;
+  }
+
+  .header-second__items{
+    gap: 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header-second__navigation_size_destop{
+    display: none;
+  }
+
+  .header-second__navigation_size_mobile{
+    display: block;
+  }
+
+  .header-second__burgerMenu{
+    background-image: url('../img/button_burger.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 34px;
+    height: 31px;
+    object-fit: contain;
+  }
+
+  .header-second__burgerMenu:hover{
+    background-image: url('../img/button_burger_hover.svg');
+  }
+
+  .header-second__glasses{
+    width: 53px;
+    height: 18px;
+    gap: 24px;
+  }
+}

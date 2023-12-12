@@ -1,0 +1,291 @@
+.footer{
+  background-color: #F8F8F8;
+}
+
+.footer__container{
+  width: 90%;
+  margin: 0 auto;
+  padding: 40px 0;
+
+  display: grid;
+  grid-template-columns: minmax(620px, 700px) minmax(228px, 233px) minmax(228px, 233px);
+  row-gap: 20px;
+
+  align-items: start;
+  justify-content: space-between;
+}
+
+.footer__mainInfo{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  column-gap: 20px;
+
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.footer__contactInfo{
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.footer__social_size_desktop{
+    grid-column: 3 / 4;
+    grid-row: 1 / 3;
+}
+
+.footer__logo{
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+
+  width: 150px;
+  height: 120px;
+  object-fit: contain;
+}
+
+.footer__title{
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+
+  margin: 0;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  font-family: 'Montserrat', Arial, sans-serif;
+}
+
+.footer__title_big-letters{
+  margin: 0;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 600;
+  font-family: 'Montserrat', Arial, sans-serif;
+}
+
+.footer__address{
+  grid-column: 1 / 3;
+  grid-row: 2 / 3;
+
+  margin: 0;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  font-style: normal;
+  font-family: 'Montserrat', Arial, sans-serif;
+}
+
+.footer__tel{
+  grid-column: 1 / 3;
+  grid-row: 3 / 4;
+
+  margin: 0;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 600;
+  font-family: 'Montserrat', Arial, sans-serif;
+
+  text-decoration: none;
+  color: #000;
+}
+
+.footer__tel:hover{
+  color: #268237;
+}
+
+.footer__email{
+  grid-column: 1 / 3;
+  grid-row: 4 / 5;
+
+  margin: 0;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 600;
+  font-family: 'Montserrat', Arial, sans-serif;
+
+  text-decoration: none;
+  color: #000;
+}
+
+.footer__email:hover{
+  color: #268237;
+}
+
+.footer__menu{
+  text-align: center;
+  grid-column: 2 / 3;
+  grid-row: 1 / 3;
+}
+
+.footer__items{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 14px;
+}
+
+.footer__item{
+  margin: 0;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 600;
+  font-family: 'Montserrat', Arial, sans-serif;
+  
+  text-decoration: none;
+  color: #000;
+
+  cursor: pointer;
+}
+
+.footer__item:hover{
+  color: #268237;
+}
+
+.footer__linkSocial{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+}
+
+.footer__imgSocial{
+  width: 40px;
+  height: 40px;
+
+  object-fit: contain;
+}
+
+.footer__description{
+  margin: 0;
+  font-size: 14px;
+  line-height: 10px;
+  font-weight: 600;
+  font-family: 'Montserrat', Arial, sans-serif;
+  
+  text-decoration: none;
+  color: #000;
+
+  cursor: pointer;
+}
+
+.footer__description:hover{
+  color: #268237;
+}
+
+.footer__social_size_mobile{
+  display: none;
+}
+
+@media screen and (max-width: 1280px) {
+  .footer__container{
+    width: 85.94%;
+    grid-template-columns: minmax(450px, 620px) minmax(205px, 233px);
+    row-gap: 7px;
+  }
+
+  .footer__title{
+    font-size: 12px;
+  }
+  
+  .footer__title_big-letters{
+    font-size: 12px;
+  }
+
+  .footer__contactInfo{
+    row-gap: 7px;
+  }
+
+  .footer__tel{
+  }
+
+  .footer__email{
+  }
+
+  .footer__linkSocial{
+    justify-content: flex-start;
+  }
+
+  .footer__social_size_mobile{
+    display: block;
+  }
+
+  .footer__social_size_desktop{
+    display: none;
+  }
+
+  .footer__mainInfo {
+    column-gap: 10px;
+  }
+
+  .footer__logo{
+    width: 107px;
+    height: 97px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer__container{
+    width: 93.75%;
+    grid-template-columns: minmax(450px, 620px) minmax(205px, 233px);
+  }
+
+  .footer__email{
+    font-size: 12px;
+  }
+
+  .footer__address{
+    font-size: 12px;
+  }
+
+  .footer__tel{
+    font-size: 12px;
+  }
+
+  .footer__logo{
+    width: 100px;
+    height: 80px;
+  }
+
+  .footer__item{
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .footer__container{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .footer__mainInfo{
+    flex-direction: column;
+  }
+
+  .footer__menu {
+    display: flex;
+  }
+
+  .footer__title {
+    text-align: center;
+  }
+  
+  .footer__contactInfo{
+    display: flex;
+    align-items: center;
+  }
+
+}
