@@ -1,0 +1,41 @@
+.achivments{
+  width: 90%;
+  margin: 0 auto;
+}
+
+.achivments__forYear{
+  width: 100%
+}
+
+.achivments__container{
+  display: grid;
+  grid-template-columns: minmax(150px, 270px) minmax(150px, 270px) minmax(150px, 270px) minmax(150px, 270px);
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.achivments__img{
+  width: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+  .achivments__container{
+    grid-template-columns: minmax(150px, 270px) minmax(150px, 270px) minmax(150px, 270px);
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  .achivments__container{
+    grid-template-columns: minmax(150px, 270px) minmax(150px, 270px);
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .achivments__container{
+    grid-template-columns: 1fr;
+    justify-content: center;
+
+  }
+}

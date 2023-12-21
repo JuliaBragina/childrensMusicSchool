@@ -1,0 +1,21 @@
+@import url(./vendor/normalize.css);
+@import url(./vendor/fonts/fonts.css);
+@import url(./blocks/root.css);
+
+@import url(./blocks/header.css);
+@import url(./blocks/header-first.css);
+@import url(./blocks/header-second.css);
+@import url(./blocks/menu.css);
+@import url(./blocks/event.css);
+@import url(./blocks/event-main.css);
+
+@import url(./blocks/content.css);
+
+@import url(./blocks/school-info.css);
+@import url(./blocks/burgerMenu.css);
+@import url(./blocks/achivments.css);
+@import url(./blocks/documents.css);
+
+@import url(./blocks/current-event.css);
+
+@import url(./blocks/footer.css);

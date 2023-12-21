@@ -1,0 +1,34 @@
+.documents__container{
+  width: 90%;
+  margin: 0 auto
+}
+
+.documents__title{
+  margin: 0;
+  font-size: 32px;
+  line-height: 50px;
+  font-weight: 500;
+  font-family: 'Montserrat', Arial, sans-serif;
+}
+
+.documents__items{
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+
+  margin: 0;
+  font-size: 24px;
+  line-height: 26px;
+  font-weight: 500;
+  font-family: 'Montserrat', Arial, sans-serif;
+  padding-bottom: 15px;
+}
+
+.documents__item{
+  margin: 0;
+  font-size: 20px;
+  line-height: 22px;
+  font-weight: 500;
+  font-family: 'Georgia', Arial, sans-serif;
+  padding-bottom: 15px;
+}

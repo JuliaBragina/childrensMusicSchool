@@ -6,7 +6,7 @@
     <meta name="author" content="Julia Bragina">
     <meta name="description" content="Сайт детской музыкальной школы 38"> 
     <meta name="keywords" content="музыкальная школа, Санкт-Петербург, школа, музыка">
-    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./css/index.css">
     <title>Сайт детской музыкальной школы 38</title>
   </head>
   <body class="root">
@@ -24,30 +24,60 @@
         </section>
 
         <section class="header-second">
-          <nav class="header-second__navigation header-second__navigation_size_mobile">
-            <ul class="header-second__items">
-              <li class="header-second__item"><div class="header-second__glasses"></div></li>
-              <li class="header-second__item"><div class="header-second__burgerMenu"></div></li>
-            </ul>
-          </nav>
-          <nav class="header-second__navigation header-second__navigation_size_destop">
-            <ul class="header-second__items">
-              <li class="header-second__item"><a class="header-second__link">Главная</a></li>
-              <li class="header-second__item"><a class="header-second__link">О школе</a></li>
-              <li class="header-second__item"><a class="header-second__link">Обучение</a></li>
-              <li class="header-second__item"><a class="header-second__link">Родителям</a></li>
-              <li class="header-second__item"><a class="header-second__link">Галерея</a></li>
-              <li class="header-second__item"><a class="header-second__link">Контакты</a></li>
-              <li class="header-second__item"><div class="header-second__glasses"></div></li>
-            </ul>
-          </nav>
+          <img src="./img/banner_startpage.png" alt="баннер" class="header-second__banner">
+
+          <div class="menu">
+            <nav class="menu__navigation menu__navigation_size_mobile">
+              <ul class="menu__items">
+                <li class="menu__item"><div class="menu__glasses"></div></li>
+                <li class="menu__item"><button type="button" class="menu__burgerMenu"></button></li>
+              </ul>
+            </nav>
+            <nav class="menu__navigation menu__navigation_size_destop">
+              <ul class="menu__items">
+                <li class="menu__item"><a class="menu__link">Главная</a></li>
+                <li class="menu__item"><a class="menu__link">О школе</a>
+                  <ul class="menu__subItems">
+                    <li class="menu__subItem"><a class="menu__link">Сведения об образовательной организации</a></li>
+                    <li class="menu__subItem"><a class="menu__link">Отделы и секции</a></li>
+                    <li class="menu__subItem"><a class="menu__link">История школы</a></li>
+                    <li class="menu__subItem"><a class="menu__link">Документы</a></li>
+                  </ul>
+                </li>
+                <li class="menu__item"><a class="menu__link">Обучение</a>
+                  <ul class="menu__subItems">
+                    <li class="menu__subItem"><a class="menu__link">Образовательные программы</a></li>
+                    <li class="menu__subItem"><a class="menu__link">План работы</a></li>
+                    <li class="menu__subItem"><a class="menu__link">Расписание занятий</a></li>
+                    <li class="menu__subItem"><a class="menu__link">Экзамены и зачёты</a></li>
+                  </ul>
+                </li>
+                <li class="menu__item"><a class="menu__link">Родителям</a>
+                  <ul class="menu__subItems">
+                    <li class="menu__subItem"><a class="menu__link">Приём в школу</a></li>
+                    <li class="menu__subItem"><a class="menu__link">Платные образовательные услуги</a></li>
+                    <li class="menu__subItem"><a class="menu__link">Прокат музыкальных инструментов</a></li>
+                    <li class="menu__subItem"><a class="menu__link">Договоры</a></li>
+                    <li class="menu__subItem"><a class="menu__link">Реквизиты школы</a></li>
+                    <li class="menu__subItem"><a class="menu__link">Независимая оценка качества</a></li>
+                  </ul>
+                </li>
+                <li class="menu__item"><a class="menu__link">Галерея</a>
+                  <ul class="menu__subItems">
+                    <li class="menu__subItem"><a href="./pages/achivments.html" class="menu__link">Достижения</a></li>
+                    <li class="menu__subItem"><a class="menu__link">Видео</a></li>
+                  </ul>
+                </li>
+                <li class="menu__item"><a class="menu__link">Контакты</a></li>
+                <li class="menu__item"><div class="menu__glasses"></div></li>
+              </ul>
+            </nav>
+          </div>
+          
           <section class="header-second__description">
             <div class="header-second__container">
               <img class="header-second__logoDmsh" src="./img/logo_dmsh.svg" alt="логотип школы">
-              <h1 class="header-second__title">
-                <span class="header-second__title">Санкт-Петербургское государственное бюджетное учреждение дополнительного образования</span>
-                <span class="header-second__title header-second__title_big-letters">«Санкт-Петербургская детская музыкальная школа № 38»</span>
-              </h1>
+              <h1 class="header-second__title">Санкт-Петербургское государственное бюджетное учреждение дополнительного образования «Санкт-Петербургская детская музыкальная школа № 38»</h1>
               <p class="header-second__slogan">"Сердце бьется в такте, разум звучит в нотах: Музыкальная школа — где детство играет с гармонией будущего."</p>
             </div>
           </section>
@@ -55,7 +85,167 @@
 
       </header> 
       
-      <main class="content"></main>
+      <main class="content">
+        <div class="countent__container">
+          <section class="current-event">
+            <h3 class="current-event__title">Новости</h3>
+
+            <article class="event-main">
+              <a class="event-main__link" href="">
+                <div class="event-main__container">
+                  <article class="event-main__description">
+                    <time class="event-main__time">20.12.2023</time>
+                    <h4 class="event-main__title">Осенняя палитра</h4>
+                    <hr class="event-main__line">
+                    <p class="event-main__text">20 ноября в уютном зале СПб ГБУ "КЦСОН Выборгского района" состоялся концерт учащихся нашей школы "Осенняя палитра"...</p>
+                    <div class="event-main__buttonContainer">
+                      <button class="event-main__button">К новости</button>
+                      <div class="event-main__buttonImg"></div>
+                    </div>
+                  </article>
+                  <img src="./js/img/foto1.jpg" class="event-main__imgEvent" alt="">
+                </div>
+              </a>
+            </article>
+
+            <article class="event-main">
+              <a class="event-main__link" href="./pages/news.html">
+                <img class="event-main__img" src="./js/img/foto2.jpg" alt="">
+                <div class="event-main__container event-main__container_type_two">
+                  <article class="event-main__description event-main__description_type_two">
+                    <time class="event-main__time">20.12.2023</time>
+                    <h4 class="event-main__title">Осенняя палитра</h4>
+                    <hr class="event-main__line">
+                    <p class="event-main__text">20 ноября в уютном зале СПб ГБУ "КЦСОН Выборгского района" состоялся концерт учащихся нашей школы "Осенняя палитра"...</p>
+                    <div class="event-main__buttonContainer">
+                      <button class="event-main__button">К новости</button>
+                      <div class="event-main__buttonImg"></div>
+                    </div>
+                  </article>
+                </div>
+              </a>
+            </article>
+
+            <article class="event-main">
+              <a class="event-main__link" href="">
+                <div class="event-main__container">
+                  <article class="event-main__description">
+                    <time class="event-main__time">20.12.2023</time>
+                    <h4 class="event-main__title">Осенняя палитра</h4>
+                    <hr class="event-main__line">
+                    <p class="event-main__text">20 ноября в уютном зале СПб ГБУ "КЦСОН Выборгского района" состоялся концерт учащихся нашей школы "Осенняя палитра"...</p>
+                    <div class="event-main__buttonContainer">
+                      <button class="event-main__button">К новости</button>
+                      <div class="event-main__buttonImg"></div>
+                    </div>
+                  </article>
+                  <img src="./js/img/foto4.jpg" class="event-main__imgEvent">
+                </div>
+              </a>
+            </article>
+
+            <article class="event-main">
+              <a class="event-main__link" href="">
+                <img class="event-main__img" src="./js/img/foto5.jpg" alt="">
+                <div class="event-main__container event-main__container_type_two">
+                  <article class="event-main__description event-main__description_type_two">
+                    <time class="event-main__time">20.12.2023</time>
+                    <h4 class="event-main__title">Осенняя палитра</h4>
+                    <hr class="event-main__line">
+                    <p class="event-main__text">20 ноября в уютном зале СПб ГБУ "КЦСОН Выборгского района" состоялся концерт учащихся нашей школы "Осенняя палитра"...</p>
+                    <div class="event-main__buttonContainer">
+                      <button class="event-main__button">К новости</button>
+                      <div class="event-main__buttonImg"></div>
+                    </div>
+                  </article>
+                </div>
+              </a>
+            </article>
+      
+          </section>
+
+          <section class="school-info">
+            <h4 class="school-info__title">Сведения об образовательной организации</h4>
+            <nav class="school-info__navigation">
+              <ul class="school-info__items">
+                <li class="school-info__item"><a class="school-info__link">Основные сведения</a></li>
+                <li class="school-info__item"><a class="school-info__link">Структура и органы управления образовательной организацией</a></li>
+                <li class="school-info__item"><a class="school-info__link">Документы</a></li>
+                <li class="school-info__item"><a class="school-info__link">Образование</a></li>
+                <li class="school-info__item"><a class="school-info__link">Образовательные стандарты и требования</a></li>
+                <li class="school-info__item"><a class="school-info__link">Руководство. Педагогический состав</a></li>
+                <li class="school-info__item"><a class="school-info__link">Материально-техническое обеспечение и оснащенность образовательного процесса</a></li>
+                <li class="school-info__item"><a class="school-info__link">Стипендии и иные виды материальной поддержки</a></li>
+                <li class="school-info__item"><a class="school-info__link">Платные образовательные услуги</a></li>
+                <li class="school-info__item"><a class="school-info__link">Финансово-хозяйственная деятельность</a></li>
+                <li class="school-info__item"><a class="school-info__link">Вакантные места для приема (перевода)</a></li>
+                <li class="school-info__item"><a class="school-info__link">Доступная среда</a></li>
+                <li class="school-info__item"><a class="school-info__link">Международное сотрудничество</a></li>
+              </ul>
+            </nav>
+          </section>
+        </div>
+
+        <div class="content__downLoadMore">
+          <button type="submit" class="content__button">Загрузить еще</button>
+        </div>
+
+      </main>
+
+      <section class="burgerMenu">
+        <div class="burgerMenu__container">
+          <header class="burgerMenu__header">
+            <img src="./img/logo_dmsh.svg" alt="логотип школы" class="burgerMenu__logo">
+            <h1 class="burgerMenu__title">Санкт-Петербургское государственное бюджетное учреждение дополнительного образования 
+              <span class="burgerMenu__title_size_big">«Санкт-Петербургская детская музыкальная школа № 38»</span>
+            </h1>
+            <nav class="burgerMenu__navigation">
+              <ul class="burgerMenu__items">
+                <li class="burgerMenu__item"><div class="burgerMenu__glasses"></div></li>
+                <li class="burgerMenu__item"><button type="button" class="burgerMenu__closeMenu"></button></li>
+              </ul>
+            </nav>
+          </header>
+          <nav class="burgerMenu__mmenu">
+            <ul class="burgerMenu__menuItems">
+              <li class="burgerMenu__menuItem"><a class="burgerMenu__link">Главная</a></li>
+              <li class="burgerMenu__menuItem">О школе
+                <ul class="burgerMenu__subItems">
+                  <li class="burgerMenu__subItem"><a class="burgerMenu__link">Сведения об образовательной организации</a></li>
+                  <li class="burgerMenu__subItem"><a class="burgerMenu__link">Отделы и секции</a></li>
+                  <li class="burgerMenu__subItem"><a class="burgerMenu__link">История школы</a></li>
+                  <li class="burgerMenu__subItem"><a class="burgerMenu__link">Документы</a></li>
+                </ul>
+              </li>
+              <li class="burgerMenu__menuItem">Обучение
+                <ul class="burgerMenu__subItems">
+                  <li class="burgerMenu__subItem"><a class="burgerMenu__link">Образовательные программы</a></li>
+                  <li class="burgerMenu__subItem"><a class="burgerMenu__link">План работы</a></li>
+                  <li class="burgerMenu__subItem"><a class="burgerMenu__link">Расписание занятий</a></li>
+                  <li class="burgerMenu__subItem"><a class="burgerMenu__link">Экзамены и зачёты</a></li>
+                </ul>
+              </li>
+              <li class="burgerMenu__menuItem">Родителям
+                <ul class="burgerMenu__subItems">
+                  <li class="burgerMenu__subItem"><a class="burgerMenu__link">Приём в школу</a></li>
+                  <li class="burgerMenu__subItem"><a class="burgerMenu__link">Платные образовательные услуги</a></li>
+                  <li class="burgerMenu__subItem"><a class="burgerMenu__link">Прокат музыкальных инструментов</a></li>
+                  <li class="burgerMenu__subItem"><a class="burgerMenu__link">Договоры</a></li>
+                  <li class="burgerMenu__subItem"><a class="burgerMenu__link">Реквизиты школы</a></li>
+                  <li class="burgerMenu__subItem"><a class="burgerMenu__link">Независимая оценка качества</a></li>
+                </ul>
+              </li>
+              <li class="burgerMenu__menuItem">Галерея
+                <ul class="burgerMenu__subItems">
+                  <li class="burgerMenu__subItem"><a class="burgerMenu__link">Достижения</a></li>
+                  <li class="burgerMenu__subItem"><a class="burgerMenu__link">Видео</a></li>
+                </ul>
+              </li>
+              <li class="burgerMenu__menuItem"><a class="burgerMenu__link">Контакты</a></li>
+            </ul>
+          </nav>
+        </div>
+      </section>
 
       <footer class="footer">
         <div class="footer__container">
@@ -96,6 +286,6 @@
         </div>
       </footer>
     </div>
-  </body>
+    <script src="./js/burgerMenu.js" defer></script>  </body>
 </html>
 

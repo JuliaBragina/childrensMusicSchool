@@ -1,0 +1,46 @@
+.school-info{
+  width: 32.41%;
+}
+
+.school-info__title{
+  margin: 0;
+  font-size: 24px;
+  line-height: 26px;
+  font-weight: 600;
+  font-family: 'Montserrat', Arial, sans-serif;
+  padding-bottom: 30px;
+}
+
+.school-info__items{
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.school-info__item{
+  margin: 0;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 500;
+  font-family: 'Montserrat', Arial, sans-serif;
+
+  padding-bottom: 15px;
+  color: #268237;
+  cursor: pointer;
+}
+
+.school-info__item:hover{
+  color: #000;
+}
+
+@media screen and (max-width: 1380px) {
+  .school-info{
+    width: 32.27%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .school-info{
+    width: 100%;
+  }
+}

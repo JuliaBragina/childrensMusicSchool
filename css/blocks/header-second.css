@@ -1,0 +1,128 @@
+.header-second{
+  position: relative;
+}
+
+.header-second__banner{
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+.header-second__description{
+  position: absolute;
+  width: 90%;
+  background-color: #F8F8F8;
+  top: 90%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, 0);
+}
+
+.header-second__container{
+  width: 96%;
+  margin: 0 auto;
+  padding: 40px 0;
+
+  display: grid;
+  column-gap: 20px;
+  row-gap: 20px;
+}
+
+.header-second__logoDmsh{
+  width: 173px;
+  height: 150px;
+  object-fit: contain;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.header-second__title{
+  margin: 0;
+  font-size: 30px;
+  line-height: 50px;
+  font-weight: 500;
+  font-family: 'Montserrat', Arial, sans-serif;
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+
+.header-second__slogan{
+  margin: 0;
+  font-size: 24px;
+  line-height: 46px;
+  font-weight: 400;
+  font-style: italic;
+  font-family: 'Montserrat', Arial, sans-serif;
+  grid-column: 1 / 3;
+  grid-row: 2 / 3;
+}
+
+@media screen and (max-width: 1280px) {
+  .header-second__description{
+    top: 93%;
+  }
+
+  .header-second__title{
+    font-size: 24px;
+    line-height: 36px;
+    font-family: 'Montserrat', Arial, sans-serif;
+  }
+  
+  .header-second__title_big-letters{
+    font-size: 24px;
+  }
+  
+  .header-second__slogan{
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  .header-second__description{
+    width: 85.94%;
+  }
+
+  .header-second__container {
+    width: 91.81%;
+    padding: 35px 0;
+  }
+}
+
+@media screen and (max-width: 940px) {
+  .header-second__logoDmsh{
+    width: 100px;
+    height: 87px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header-second__title{
+    font-size: 16px;
+  }
+  
+  .header-second__title_big-letters{
+    font-size: 20px;
+  }
+  
+  .header-second__slogan{
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .header-second__logoDmsh{
+    width: 58px;
+    height: 50px;
+  }
+
+  .header-second__title{
+    font-size: 12px;
+  }
+  
+  .header-second__title_big-letters{
+    font-size: 24px;
+  }
+  
+  .header-second__slogan{
+    font-size: 12px;
+  }
+}
