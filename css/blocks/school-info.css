@@ -33,6 +33,11 @@
   color: #000;
 }
 
+.school-info__link{
+  text-decoration: none;
+  color: inherit;
+}
+
 @media screen and (max-width: 1380px) {
   .school-info{
     width: 32.27%;

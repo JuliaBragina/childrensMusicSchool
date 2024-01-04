@@ -180,11 +180,11 @@
   }
 
   .event-main__imgEvent {
-      height: 312px;
+    height: 312px;
   }
 
   .event-main__img{
-    height: 392px;
+    height: 336px;
   }
 }
 
@@ -210,7 +210,7 @@
   }
 
   .event-main__img{
-    height: 392px;
+    height: 327px;
   }
 }
   

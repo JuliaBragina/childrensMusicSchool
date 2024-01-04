@@ -1,43 +1,42 @@
-const slidesContainer = document.querySelector('.slides');
-let currentIndex = 0;
+document.addEventListener('DOMContentLoaded', function () {
+  var slider = document.querySelector('.slideShow__container');
+  var slides = document.querySelectorAll('.slideShow__slide');
+  var nextButton = document.querySelector('.slideShow__next');
+  var prevButton = document.querySelector('.slideShow__prev');
 
-function showSlides() {
-  const imageFolder = '../js/img/'; // Путь к папке с изображениями
-  const images = ['foto1.jpg', 'foto2.jpg', 'foto3.jpg', 'foto4.jpg', 'foto5.jpg']; // Список изображений
+  var clickCounter = 0;
+  var slideWidth = slides[0].offsetWidth;
 
-  for (let i = 0; i < 3; i++) {
-    const slide = document.createElement('div');
-    slide.classList.add('slide');
-
-    const img = document.createElement('img');
-    img.src = imageFolder + images[(currentIndex + i) % images.length];
-    img.alt = 'Slide ' + ((currentIndex + i) % images.length + 1);
-
-    slide.appendChild(img);
-    slidesContainer.appendChild(slide);
+  function updateButtons() {
+    prevButton.classList.toggle('is-inactive', clickCounter === 0);
+    nextButton.classList.toggle('is-inactive', clickCounter === slides.length - 1);
   }
 
-  currentIndex = (currentIndex + 1) % images.length;
-}
+  function slideTo(index) {
+    clickCounter = index;
+    updateButtons();
+    slider.style.transform = 'translateX(' + -clickCounter * slideWidth + 'px)';
+  }
 
-function showSlide() {
-  const slideWidth = document.querySelector('.slide').clientWidth;
-  const newPosition = -currentIndex * slideWidth;
-  slidesContainer.style.transform = `translateX(${newPosition}px)`;
-}
+  nextButton.addEventListener('click', function () {
+    if (clickCounter < slides.length - 1) {
+      clickCounter++;
+      slideTo(clickCounter);
+    }
+  });
 
-function prevSlide() {
-  currentIndex = (currentIndex - 1 + 3) % 3;
-  showSlide();
-}
+  prevButton.addEventListener('click', function () {
+    if (clickCounter > 0) {
+      clickCounter--;
+      slideTo(clickCounter);
+    }
+  });
 
-function nextSlide() {
-  currentIndex = (currentIndex + 1) % 3;
-  showSlide();
-}
+  window.addEventListener('resize', function () {
+    slideWidth = slides[0].offsetWidth;
+    slideTo(clickCounter);
+  });
 
-window.onload = () => {
-  showSlides();
-  showSlide();
-};
+  updateButtons();
+});
 

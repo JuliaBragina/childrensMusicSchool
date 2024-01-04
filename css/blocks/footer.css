@@ -152,6 +152,11 @@
   color: #268237;
 }
 
+.footer__link{
+  text-decoration: none;
+  color: inherit;
+}
+
 .footer__linkSocial{
   display: flex;
   align-items: center;

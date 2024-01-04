@@ -1,3 +1,7 @@
+.documents{
+  margin-bottom: 80px;
+}
+
 .documents__container{
   width: 90%;
   margin: 0 auto
@@ -9,6 +13,8 @@
   line-height: 50px;
   font-weight: 500;
   font-family: 'Montserrat', Arial, sans-serif;
+
+  padding-bottom: 20px;
 }
 
 .documents__items{
@@ -26,9 +32,39 @@
 
 .documents__item{
   margin: 0;
+  padding-bottom: 27px;
+}
+
+.documents__subItems{
+  margin: 0;
+  padding: 0;
+  padding-top: 20px;
+}
+
+.documents__subItem{
+  margin: 0;
+  padding: 0;
   font-size: 20px;
   line-height: 22px;
   font-weight: 500;
   font-family: 'Georgia', Arial, sans-serif;
-  padding-bottom: 15px;
+
+  padding-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .documents__title{
+    font-size: 24px;
+  }
+
+  .documents__items{
+    font-size: 18px;
+  }
+
+  .documents__subItem{
+    font-size: 18px;
+  }
 }

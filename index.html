@@ -27,51 +27,51 @@
           <img src="./img/banner_startpage.png" alt="баннер" class="header-second__banner">
 
           <div class="menu">
-            <nav class="menu__navigation menu__navigation_size_mobile">
-              <ul class="menu__items">
-                <li class="menu__item"><div class="menu__glasses"></div></li>
-                <li class="menu__item"><button type="button" class="menu__burgerMenu"></button></li>
-              </ul>
-            </nav>
-            <nav class="menu__navigation menu__navigation_size_destop">
-              <ul class="menu__items">
-                <li class="menu__item"><a class="menu__link">Главная</a></li>
-                <li class="menu__item"><a class="menu__link">О школе</a>
-                  <ul class="menu__subItems">
-                    <li class="menu__subItem"><a class="menu__link">Сведения об образовательной организации</a></li>
-                    <li class="menu__subItem"><a class="menu__link">Отделы и секции</a></li>
-                    <li class="menu__subItem"><a class="menu__link">История школы</a></li>
-                    <li class="menu__subItem"><a class="menu__link">Документы</a></li>
-                  </ul>
-                </li>
-                <li class="menu__item"><a class="menu__link">Обучение</a>
-                  <ul class="menu__subItems">
-                    <li class="menu__subItem"><a class="menu__link">Образовательные программы</a></li>
-                    <li class="menu__subItem"><a class="menu__link">План работы</a></li>
-                    <li class="menu__subItem"><a class="menu__link">Расписание занятий</a></li>
-                    <li class="menu__subItem"><a class="menu__link">Экзамены и зачёты</a></li>
-                  </ul>
-                </li>
-                <li class="menu__item"><a class="menu__link">Родителям</a>
-                  <ul class="menu__subItems">
-                    <li class="menu__subItem"><a class="menu__link">Приём в школу</a></li>
-                    <li class="menu__subItem"><a class="menu__link">Платные образовательные услуги</a></li>
-                    <li class="menu__subItem"><a class="menu__link">Прокат музыкальных инструментов</a></li>
-                    <li class="menu__subItem"><a class="menu__link">Договоры</a></li>
-                    <li class="menu__subItem"><a class="menu__link">Реквизиты школы</a></li>
-                    <li class="menu__subItem"><a class="menu__link">Независимая оценка качества</a></li>
-                  </ul>
-                </li>
-                <li class="menu__item"><a class="menu__link">Галерея</a>
-                  <ul class="menu__subItems">
-                    <li class="menu__subItem"><a href="./pages/achivments.html" class="menu__link">Достижения</a></li>
-                    <li class="menu__subItem"><a class="menu__link">Видео</a></li>
-                  </ul>
-                </li>
-                <li class="menu__item"><a class="menu__link">Контакты</a></li>
-                <li class="menu__item"><div class="menu__glasses"></div></li>
-              </ul>
-            </nav>
+            <div class="menu__container menu__container_size_destop">
+              <nav class="menu__navigation">
+                <ul class="menu__items">
+                  <li class="menu__item"><a href="#" class="menu__link">Главная</a></li>
+                  <li class="menu__item"><a href="#" class="menu__link">О школе</a>
+                    <ul class="menu__subItems">
+                      <li class="menu__subItem"><a href="#" class="menu__link">Сведения об образовательной организации</a></li>
+                      <li class="menu__subItem"><a href="#" class="menu__link">Отделы и секции</a></li>
+                      <li class="menu__subItem"><a href="#" class="menu__link">История школы</a></li>
+                      <li class="menu__subItem"><a href="./pages/documents.html" target=__blank class="menu__link">Документы</a></li>
+                    </ul>
+                  </li>
+                  <li class="menu__item"><a href="#" class="menu__link">Обучение</a>
+                    <ul class="menu__subItems">
+                      <li class="menu__subItem"><a href="#" class="menu__link">Образовательные программы</a></li>
+                      <li class="menu__subItem"><a href="#" class="menu__link">План работы</a></li>
+                      <li class="menu__subItem"><a href="#" class="menu__link">Расписание занятий</a></li>
+                      <li class="menu__subItem"><a href="#" class="menu__link">Экзамены и зачёты</a></li>
+                    </ul>
+                  </li>
+                  <li class="menu__item">Родителям
+                    <ul class="menu__subItems">
+                      <li class="menu__subItem"><a href="#" class="menu__link">Приём в школу</a></li>
+                      <li class="menu__subItem"><a href="#" class="menu__link">Платные образовательные услуги</a></li>
+                      <li class="menu__subItem"><a href="#" class="menu__link">Прокат музыкальных инструментов</a></li>
+                      <li class="menu__subItem"><a href="#" class="menu__link">Договоры</a></li>
+                      <li class="menu__subItem"><a href="#" class="menu__link">Реквизиты школы</a></li>
+                      <li class="menu__subItem"><a href="#" class="menu__link">Независимая оценка качества</a></li>
+                    </ul>
+                  </li>
+                  <li class="menu__item"><a href="#" class="menu__link">Галерея</a>
+                    <ul class="menu__subItems">
+                      <li class="menu__subItem"><a href="./pages/achivments.html" class="menu__link">Достижения</a></li>
+                      <li class="menu__subItem"><a href="#" class="menu__link">Видео</a></li>
+                    </ul>
+                  </li>
+                  <li class="menu__item"><a class="menu__link">Контакты</a></li>
+                </ul>
+              </nav>
+              <button type="button" class="menu__fontIncrease"></button>
+            </div>
+            <div class="menu__container menu__container_size_mobile">
+              <button type="button" class="menu__fontIncrease"></button>
+              <button type="button" class="menu__burgerMenu"></button>
+            </div>
           </div>
           
           <section class="header-second__description">
@@ -91,7 +91,7 @@
             <h3 class="current-event__title">Новости</h3>
 
             <article class="event-main">
-              <a class="event-main__link" href="">
+              <a class="event-main__link" href="./pages/news.html" target="_blank">
                 <div class="event-main__container">
                   <article class="event-main__description">
                     <time class="event-main__time">20.12.2023</time>
@@ -109,7 +109,7 @@
             </article>
 
             <article class="event-main">
-              <a class="event-main__link" href="./pages/news.html">
+              <a class="event-main__link" href="./pages/news.html" target="_blank">
                 <img class="event-main__img" src="./js/img/foto2.jpg" alt="">
                 <div class="event-main__container event-main__container_type_two">
                   <article class="event-main__description event-main__description_type_two">
@@ -127,7 +127,7 @@
             </article>
 
             <article class="event-main">
-              <a class="event-main__link" href="">
+              <a class="event-main__link" href="./pages/news.html" target="_blank">
                 <div class="event-main__container">
                   <article class="event-main__description">
                     <time class="event-main__time">20.12.2023</time>
@@ -145,7 +145,7 @@
             </article>
 
             <article class="event-main">
-              <a class="event-main__link" href="">
+              <a class="event-main__link" href="./pages/news.html" target="_blank">
                 <img class="event-main__img" src="./js/img/foto5.jpg" alt="">
                 <div class="event-main__container event-main__container_type_two">
                   <article class="event-main__description event-main__description_type_two">
@@ -195,53 +195,51 @@
       <section class="burgerMenu">
         <div class="burgerMenu__container">
           <header class="burgerMenu__header">
-            <img src="./img/logo_dmsh.svg" alt="логотип школы" class="burgerMenu__logo">
+            <img src="../img/logo_dmsh.svg" alt="логотип школы" class="burgerMenu__logo">
             <h1 class="burgerMenu__title">Санкт-Петербургское государственное бюджетное учреждение дополнительного образования 
               <span class="burgerMenu__title_size_big">«Санкт-Петербургская детская музыкальная школа № 38»</span>
             </h1>
-            <nav class="burgerMenu__navigation">
-              <ul class="burgerMenu__items">
-                <li class="burgerMenu__item"><div class="burgerMenu__glasses"></div></li>
-                <li class="burgerMenu__item"><button type="button" class="burgerMenu__closeMenu"></button></li>
-              </ul>
-            </nav>
+            <div class="menu__container menu__container_size_mobile">
+              <button type="button" class="menu__fontIncrease menu__fontIncrease_theme_white"></button>
+              <button type="button" class="burgerMenu__closeMenu"></button>
+            </div>
           </header>
           <nav class="burgerMenu__mmenu">
             <ul class="burgerMenu__menuItems">
-              <li class="burgerMenu__menuItem"><a class="burgerMenu__link">Главная</a></li>
+              <li class="burgerMenu__menuItem"><a href="#" class="burgerMenu__link">Главная</a></li>
               <li class="burgerMenu__menuItem">О школе
                 <ul class="burgerMenu__subItems">
-                  <li class="burgerMenu__subItem"><a class="burgerMenu__link">Сведения об образовательной организации</a></li>
-                  <li class="burgerMenu__subItem"><a class="burgerMenu__link">Отделы и секции</a></li>
-                  <li class="burgerMenu__subItem"><a class="burgerMenu__link">История школы</a></li>
-                  <li class="burgerMenu__subItem"><a class="burgerMenu__link">Документы</a></li>
+                  <li class="burgerMenu__subItem"><a href="#" class="burgerMenu__link">Сведения об образовательной организации</a></li>
+                  <li class="burgerMenu__subItem"><a href="#" class="burgerMenu__link">Отделы и секции</a></li>
+                  <li class="burgerMenu__subItem"><a href="#" class="burgerMenu__link">История школы</a></li>
+                  <li class="burgerMenu__subItem"><a href="./pages/documents.html" target=__blank class="burgerMenu__link">Документы</a></li>
                 </ul>
               </li>
               <li class="burgerMenu__menuItem">Обучение
                 <ul class="burgerMenu__subItems">
-                  <li class="burgerMenu__subItem"><a class="burgerMenu__link">Образовательные программы</a></li>
-                  <li class="burgerMenu__subItem"><a class="burgerMenu__link">План работы</a></li>
-                  <li class="burgerMenu__subItem"><a class="burgerMenu__link">Расписание занятий</a></li>
-                  <li class="burgerMenu__subItem"><a class="burgerMenu__link">Экзамены и зачёты</a></li>
+                  <li class="burgerMenu__subItem"><a href="#" class="burgerMenu__link">Образовательные программы</a></li>
+                  <li class="burgerMenu__subItem"><a href="#" class="burgerMenu__link">План работы</a></li>
+                  <li class="burgerMenu__subItem"><a href="#" class="burgerMenu__link">Расписание занятий</a></li>
+                  <li class="burgerMenu__subItem"><a href="#" class="burgerMenu__link">Экзамены и зачёты</a></li>
                 </ul>
               </li>
               <li class="burgerMenu__menuItem">Родителям
                 <ul class="burgerMenu__subItems">
-                  <li class="burgerMenu__subItem"><a class="burgerMenu__link">Приём в школу</a></li>
-                  <li class="burgerMenu__subItem"><a class="burgerMenu__link">Платные образовательные услуги</a></li>
-                  <li class="burgerMenu__subItem"><a class="burgerMenu__link">Прокат музыкальных инструментов</a></li>
-                  <li class="burgerMenu__subItem"><a class="burgerMenu__link">Договоры</a></li>
-                  <li class="burgerMenu__subItem"><a class="burgerMenu__link">Реквизиты школы</a></li>
-                  <li class="burgerMenu__subItem"><a class="burgerMenu__link">Независимая оценка качества</a></li>
+                  <li class="burgerMenu__subItem"><a href="#" class="burgerMenu__link">Приём в школу</a></li>
+                  <li class="burgerMenu__subItem"><a href="#" class="burgerMenu__link">Платные образовательные услуги</a></li>
+                  <li class="burgerMenu__subItem"><a href="#" class="burgerMenu__link">Прокат музыкальных инструментов</a></li>
+                  <li class="burgerMenu__subItem"><a href="#" class="burgerMenu__link">Договоры</a></li>
+                  <li class="burgerMenu__subItem"><a href="#" class="burgerMenu__link">Реквизиты школы</a></li>
+                  <li class="burgerMenu__subItem"><a href="#" class="burgerMenu__link">Независимая оценка качества</a></li>
                 </ul>
               </li>
               <li class="burgerMenu__menuItem">Галерея
                 <ul class="burgerMenu__subItems">
-                  <li class="burgerMenu__subItem"><a class="burgerMenu__link">Достижения</a></li>
-                  <li class="burgerMenu__subItem"><a class="burgerMenu__link">Видео</a></li>
+                  <li class="burgerMenu__subItem"><a href="#" class="burgerMenu__link">Достижения</a></li>
+                  <li class="burgerMenu__subItem"><a href="#" class="burgerMenu__link">Видео</a></li>
                 </ul>
               </li>
-              <li class="burgerMenu__menuItem"><a class="burgerMenu__link">Контакты</a></li>
+              <li class="burgerMenu__menuItem"><a href="#" class="burgerMenu__link">Контакты</a></li>
             </ul>
           </nav>
         </div>
@@ -258,7 +256,6 @@
           </section>
           <nav class="footer__menu">
             <ul class="footer__items">
-              <li class="footer__item"><a class="footer__link">Карта сайта</a></li>
               <li class="footer__item"><a class="footer__link">Сведения об образовательной организации</a></li>
               <li class="footer__item"><a class="footer__link">Полезные ссылки</a></li>
               <li class="footer__item"><a class="footer__link">Нет коррупции!</a></li>
@@ -286,6 +283,7 @@
         </div>
       </footer>
     </div>
-    <script src="./js/burgerMenu.js" defer></script>  </body>
+    <script src="./js/burgerMenu.js" defer></script>
+  </body>
 </html>
 

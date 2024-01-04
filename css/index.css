@@ -1,5 +1,5 @@
-@import url(./vendor/normalize.css);
-@import url(./vendor/fonts/fonts.css);
+@import url(../vendor/normalize.css);
+@import url(../vendor/fonts/fonts.css);
 @import url(./blocks/root.css);
 
 @import url(./blocks/header.css);
@@ -8,6 +8,7 @@
 @import url(./blocks/menu.css);
 @import url(./blocks/event.css);
 @import url(./blocks/event-main.css);
+@import url(./blocks/slideShow.css);
 
 @import url(./blocks/content.css);
 

@@ -13,5 +13,4 @@ buttonSubItem.forEach(item => {
     item.classList.toggle('burgerMenu__menuItem_is_opened');
     item.children[0].classList.toggle('burgerMenu__subItems_is_open');
   });
-  
 });

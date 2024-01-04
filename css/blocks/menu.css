@@ -35,8 +35,17 @@
   height: 128px;
   object-fit: contain;
 }
+
+.menu__container{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 40px;
+
+  padding: 20px 0 20px 0;
+}
   
-.menu__navigation_size_mobile{
+.menu__container_size_mobile{
   display: none;
 }
 
@@ -47,7 +56,6 @@
   justify-content: flex-end;
   gap: 40px;
   margin: 0;
-  padding: 20px 0 20px 0;
 }
   
 .menu__item{
@@ -74,35 +82,39 @@
   color: #000;
 }
 
-.menu__glasses{
-  background-image: url('../img/button_glasses.svg');
+.menu__fontIncrease{
+  background-image: url('../../img/button_glasses.svg');
   background-repeat: no-repeat;
   background-size: contain;
+  background-color: transparent;
+  border: 0;
   width: 64px;
   height: 21px;
   object-fit: contain;
+
+  cursor: pointer;
 }
 
-.menu__glasses:hover{
-  background-image: url('../img/button_glasses_hover.svg');
+.menu__fontIncrease:hover{
+  background-image: url('../../img/button_glasses_hover.svg');
 }
 
-.menu__glasses_theme_white{
-  background-image: url('../img/button_glasses_hover.svg');
+.menu__fontIncrease_theme_white{
+  background-image: url('../../img/button_glasses_hover.svg');
 }
 
-.menu__glasses_theme_white:hover{
-  background-image: url('../img/button_glasses_black.svg');
+.menu__fontIncrease_theme_white:hover{
+  background-image: url('../../img/button_glasses_black.svg');
 }
 
 .menu__subItems{
   display: none;
 
   position: absolute;
-  top: 26px;
-  left: -20px;
+  top: 100%;
+  left: 0;
+  z-index: 1;
   width: max-content;
-  z-index: 10;
 
   background-color: rgba(113, 113, 133, .69);
   list-style-type: none;
@@ -132,6 +144,8 @@
 
 .menu__link{
   padding: 0 7px;
+  text-decoration: none;
+  color: inherit;
 }
 
 .menu__subItem:hover{
@@ -148,6 +162,10 @@
 }
 
 @media screen and (max-width: 1280px) {
+  .menu{
+    width: 85.94%;
+  }
+
   .menu_theme_white{
     height: 87px;
   }
@@ -157,16 +175,22 @@
     height: 87px;
   }
 
-  .menu{
-    width: 85.94%;
+  .menu__container, .menu__items{
+    gap: 23px;
   }
 
   .menu__item{
     font-size: 20px;
   }
-  
-  .menu__items{
-    gap: 20px;
+
+  .menu__item_theme_white{
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .menu__container, .menu__items{
+    gap: 18px;
   }
 }
 
@@ -179,52 +203,75 @@
     width: 70px;
     height: 60px;
   }
+
+  .menu__subItem{
+    font-size: 16px;
+  }
 }
 
-@media screen and (max-width: 940px) {
+@media screen and (max-width: 1000px) {
+  .menu__fontIncrease{
+    width: 54px;
+    height: 17px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .menu__fontIncrease{
+    width: 54px;
+    height: 17px;
+  }
+
+  .menu__container, .menu__items{
+    gap: 12px;
+  }
+
   .menu__item{
     font-size: 16px;
   }
-    
-  .menu__items{
-    gap: 15px;
-  }
 }
 
-
 @media screen and (max-width: 768px) {
-  .menu__navigation_size_destop{
+  .menu{
+    width: 93.75%
+  }
+
+  .menu__container_size_destop{
     display: none;
   }
   
-  .menu__navigation_size_mobile{
-    display: block;
+  .menu__container_size_mobile{
+    display: flex;
   }
   
   .menu__burgerMenu{
-    background-image: url('../img/button_burger.svg');
+    background-image: url('../../img/button_burger.svg');
     background-repeat: no-repeat;
     background-size: contain;
+    background-color: transparent;
+    border: 0;
     width: 34px;
     height: 31px;
     object-fit: contain;
-  }
 
-  .menu__burgerMenu:hover{
-    background-image: url('../img/button_burger_hover.svg');
+    cursor: pointer;
   }
 
   .menu__burgerMenu_theme_white{
-    background-image: url('../img/button_burger_green.svg');
+    background-image: url('../../img/button_burger_green.svg');
+  }
+
+  .menu__burgerMenu:hover{
+    background-image: url('../../img/button_burger_hover.svg');
   }
 
   .menu__burgerMenu_theme_white:hover{
-    background-image: url('../img/button_burger_black.svg');
+    background-image: url('../../img/button_burger_black.svg');
   }
-  
-  .menu__glasses{
-    width: 53px;
-    height: 18px;
-    gap: 24px;
+}
+
+@media screen and (max-width: 320px) {
+  .menu{
+    width: 90%
   }
 }

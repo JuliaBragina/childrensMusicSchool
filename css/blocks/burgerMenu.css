@@ -1,6 +1,4 @@
 .burgerMenu{
-  width: 100%;
-
   display: none;
 
   position: fixed;
@@ -71,12 +69,20 @@
 }
 
 .burgerMenu__closeMenu{
-  background-image: url('../img/button_close.svg');
+  background-image: url('../../img/button_close.svg');
   background-repeat: no-repeat;
   background-size: contain;
+  background-color: transparent;
+  border: 0;
   width: 26px;
   height: 24px;
   object-fit: contain;
+
+  cursor: pointer;
+}
+
+.burgerMenu__closeMenu:hover{
+  background-image: url('../../img/button_close.svg');
 }
 
 .burgerMenu__menuItems{
@@ -119,13 +125,13 @@
   position: absolute;
   top: -5px;
   right: -15px;
-  content: url("../img/button_accordeon.svg");
+  content: url("../../img/button_accordeon.svg");
   width: 11px;
   height: 36px;
 }
 
 .burgerMenu__img{
-  background-image: url("../img/button_accordeon.svg");
+  background-image: url("../../img/button_accordeon.svg");
   width: 11px;
   height: 9px;
 }
@@ -135,7 +141,7 @@
 }
 
 .burgerMenu__menuItem:hover .burgerMenu__img{
-  background-image: url('../img/button_accordeon_black.svg');
+  background-image: url('../../img/button_accordeon_black.svg');
 }
 
 .burgerMenu__subItems{
@@ -166,4 +172,9 @@
 
 .burgerMenu__subItem:hover{
   color: #000;
+}
+
+.burgerMenu__link{
+  text-decoration: none;
+  color: inherit;
 }
