@@ -1,0 +1,22 @@
+.schools-history__container{
+  width: 90%;
+  margin: 0 auto
+}
+
+.schools-history__title{
+  margin: 0;
+  font-size: 40px;
+  line-height: 50px;
+  font-weight: 600;
+  font-family: 'Montserrat', Arial, sans-serif;
+
+  margin-bottom: 30px;
+}
+
+.schools-history__text{
+  margin: 0;
+  font-size: 25px;
+  line-height: 40px;
+  font-weight: 400;
+  font-family: 'Georgia', Arial, sans-serif;
+}

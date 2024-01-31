@@ -8,3 +8,16 @@
   -moz-text-size-adjust: 100%;
   color: #000;
 }
+
+.root::-webkit-scrollbar {
+  display: none;
+}
+ 
+.root {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.root_is_menuOpened{
+  overflow-y: hidden;
+}

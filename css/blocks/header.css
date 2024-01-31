@@ -1,44 +1,8 @@
 .header{
   width: 100%;
-  height: 865px;
-
   margin-bottom: 80px;
 }
 
 .header_theme_white{
-  height: auto;
   margin-bottom: 0;
-}
-
-@media screen and (max-width: 1280px) {
-  .header{
-    height: 852px;
-  }
-
-  .header_theme_white{
-    height: auto;
-    margin-bottom: 0;
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  .header{
-    height: 700px;
-  }
-
-  .header_theme_white{
-    height: auto;
-    margin-bottom: 0;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .header{
-    height: 553px;
-  }
-
-  .header_theme_white{
-    height: auto;
-    margin-bottom: 0;
-  }
 }

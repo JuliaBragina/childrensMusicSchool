@@ -4,32 +4,56 @@
   margin-bottom: 80px;
 }
 
+.achivments__title{
+  margin: 0;
+  font-size: 24px;
+  line-height: 26px;
+  font-weight: 600;
+  font-family: 'Montserrat', Arial, sans-serif;
+  padding-bottom: 30px;
+}
+
+.achivments__yearTitle{
+  margin: 0;
+  font-size: 24px;
+  line-height: 26px;
+  font-weight: 500;
+  font-family: 'Montserrat', Arial, sans-serif;
+  padding-bottom: 30px;
+}
+
 .achivments__forYear{
-  width: 100%
+  width: 100%;
 }
 
 .achivments__container{
   display: grid;
-  grid-template-columns: minmax(150px, 270px) minmax(150px, 270px) minmax(150px, 270px) minmax(150px, 270px);
+  grid-template-columns: repeat(4, minmax(150px, 270px));
   gap: 20px;
-  align-items: center;
+  align-items: stretch;
   justify-content: space-between;
 }
 
 .achivments__img{
   width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
+.achivments__img:hover{
+  transition: all 0.3s ease;
+  box-shadow: 0 7px 10px #737272;
 }
 
 @media screen and (max-width: 1024px) {
   .achivments__container{
-    grid-template-columns: minmax(150px, 270px) minmax(150px, 270px) minmax(150px, 270px);
+    grid-template-columns: repeat(3, minmax(150px, 270px));
   }
 }
 
-
 @media screen and (max-width: 600px) {
   .achivments__container{
-    grid-template-columns: minmax(150px, 270px) minmax(150px, 270px);
+    grid-template-columns: repeat(2, minmax(150px, 270px));
   }
 }
 
@@ -37,6 +61,5 @@
   .achivments__container{
     grid-template-columns: 1fr;
     justify-content: center;
-
   }
 }

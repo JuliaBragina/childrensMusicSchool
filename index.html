@@ -12,12 +12,11 @@
   <body class="root">
     <div class="page">
       <header class="header">
+
         <section class="header-first">
           <div class="header-first__container">
-            <a href="https://spbculture.ru" class="header-first__link">
+            <a href="https://spbculture.ru" target="_blank" class="header-first__link">
               <img class="header-first__imgLink" src="./img/logo_comitetCulture.svg" alt="логотип комитета по культуре">
-            </a>
-            <a href="https://spbculture.ru" class="header-first__link">
               <p class="header-first__nameLink">Комитет по культуре Санкт-Петербурга</p>
             </a>
           </div>
@@ -26,17 +25,16 @@
         <section class="header-second">
           <img src="./img/banner_startpage.png" alt="баннер" class="header-second__banner">
 
-          <div class="menu">
-            <div class="menu__container menu__container_size_destop">
+          <div class="menu menu_size_destop">
+            <div class="menu__container">
               <nav class="menu__navigation">
                 <ul class="menu__items">
                   <li class="menu__item"><a href="#" class="menu__link">Главная</a></li>
                   <li class="menu__item"><a href="#" class="menu__link">О школе</a>
                     <ul class="menu__subItems">
-                      <li class="menu__subItem"><a href="#" class="menu__link">Сведения об образовательной организации</a></li>
+                      <li class="menu__subItem"><a href="./pages/sveden.html" class="menu__link">Сведения об образовательной организации</a></li>
+                      <li class="menu__subItem"><a href="./pages/schools-history.html" class="menu__link">История школы</a></li>
                       <li class="menu__subItem"><a href="#" class="menu__link">Отделы и секции</a></li>
-                      <li class="menu__subItem"><a href="#" class="menu__link">История школы</a></li>
-                      <li class="menu__subItem"><a href="./pages/documents.html" target=__blank class="menu__link">Документы</a></li>
                     </ul>
                   </li>
                   <li class="menu__item"><a href="#" class="menu__link">Обучение</a>
@@ -57,18 +55,17 @@
                       <li class="menu__subItem"><a href="#" class="menu__link">Независимая оценка качества</a></li>
                     </ul>
                   </li>
-                  <li class="menu__item"><a href="#" class="menu__link">Галерея</a>
-                    <ul class="menu__subItems">
-                      <li class="menu__subItem"><a href="./pages/achivments.html" class="menu__link">Достижения</a></li>
-                      <li class="menu__subItem"><a href="#" class="menu__link">Видео</a></li>
-                    </ul>
-                  </li>
+                  <li class="menu__item"><a href="./pages/achivments.html" class="menu__link">Достижения</a></li>
                   <li class="menu__item"><a class="menu__link">Контакты</a></li>
                 </ul>
               </nav>
               <button type="button" class="menu__fontIncrease"></button>
             </div>
-            <div class="menu__container menu__container_size_mobile">
+          </div>
+
+          <div class="menu menu_size_mobile">
+            <div class="menu__container">
+              <button type="button" class="menu__home"></button>
               <button type="button" class="menu__fontIncrease"></button>
               <button type="button" class="menu__burgerMenu"></button>
             </div>
@@ -85,7 +82,7 @@
 
       </header> 
       
-      <main class="content">
+     <main class="content">
         <div class="countent__container">
           <section class="current-event">
             <h3 class="current-event__title">Новости</h3>
@@ -196,15 +193,9 @@
         <div class="burgerMenu__container">
           <header class="burgerMenu__header">
             <img src="../img/logo_dmsh.svg" alt="логотип школы" class="burgerMenu__logo">
-            <h1 class="burgerMenu__title">Санкт-Петербургское государственное бюджетное учреждение дополнительного образования 
-              <span class="burgerMenu__title_size_big">«Санкт-Петербургская детская музыкальная школа № 38»</span>
-            </h1>
-            <div class="menu__container menu__container_size_mobile">
-              <button type="button" class="menu__fontIncrease menu__fontIncrease_theme_white"></button>
-              <button type="button" class="burgerMenu__closeMenu"></button>
-            </div>
+            <h1 class="burgerMenu__title">Санкт-Петербургское государственное бюджетное учреждение дополнительного образования «Санкт-Петербургская детская музыкальная школа № 38»</h1>
           </header>
-          <nav class="burgerMenu__mmenu">
+          <nav class="burgerMenu__menu">
             <ul class="burgerMenu__menuItems">
               <li class="burgerMenu__menuItem"><a href="#" class="burgerMenu__link">Главная</a></li>
               <li class="burgerMenu__menuItem">О школе
@@ -233,12 +224,7 @@
                   <li class="burgerMenu__subItem"><a href="#" class="burgerMenu__link">Независимая оценка качества</a></li>
                 </ul>
               </li>
-              <li class="burgerMenu__menuItem">Галерея
-                <ul class="burgerMenu__subItems">
-                  <li class="burgerMenu__subItem"><a href="#" class="burgerMenu__link">Достижения</a></li>
-                  <li class="burgerMenu__subItem"><a href="#" class="burgerMenu__link">Видео</a></li>
-                </ul>
-              </li>
+              <li class="burgerMenu__menuItem"><a href="#" class="burgerMenu__link">Достижения</a></li>
               <li class="burgerMenu__menuItem"><a href="#" class="burgerMenu__link">Контакты</a></li>
             </ul>
           </nav>
@@ -284,6 +270,7 @@
       </footer>
     </div>
     <script src="./js/burgerMenu.js" defer></script>
+    <script src="./js/calcHeightHeader.js" defer></script>
   </body>
 </html>
 

@@ -1,10 +1,12 @@
 .header-second{
   position: relative;
+  width: 100%;
+  height: auto;
 }
 
 .header-second__banner{
   width: 100%;
-  height: auto;
+  height: 100%;
   object-fit: cover;
 }
 
@@ -12,18 +14,21 @@
   position: absolute;
   width: 90%;
   background-color: #F8F8F8;
-  top: 90%;
+  top: 92%;
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, 0);
+
+  box-shadow: 0 4px 20px rgba(0,0,0,.1);
 }
 
 .header-second__container{
-  width: 96%;
+  width: 93.6%;
   margin: 0 auto;
   padding: 40px 0;
 
   display: grid;
+  align-items: center;
   column-gap: 20px;
   row-gap: 20px;
 }
@@ -60,69 +65,93 @@
 @media screen and (max-width: 1280px) {
   .header-second__description{
     top: 93%;
-  }
-
-  .header-second__title{
-    font-size: 24px;
-    line-height: 36px;
-    font-family: 'Montserrat', Arial, sans-serif;
-  }
-  
-  .header-second__title_big-letters{
-    font-size: 24px;
-  }
-  
-  .header-second__slogan{
-    font-size: 20px;
-    line-height: 32px;
-  }
-
-  .header-second__description{
     width: 85.94%;
   }
 
   .header-second__container {
-    width: 91.81%;
-    padding: 35px 0;
+    width: 93.98%;
+    column-gap: 15px;
+    row-gap: 15px;
+  }
+
+  .header-second__logoDmsh{
+    height: 135px;
+  }
+
+  .header-second__title{
+    font-size: 22px;
+    line-height: 34px;
+  }
+  
+  .header-second__slogan{
+    font-size: 20px;
+    line-height: 34px;
   }
 }
 
 @media screen and (max-width: 940px) {
+  .header-second__description{
+    top: 87%;
+    width: 93.75%;
+  }
+
+  .header-second__container{
+    width: 92.64%;
+    padding: 35px 0;
+  }
+
   .header-second__logoDmsh{
-    width: 100px;
-    height: 87px;
+    width: 106px;
+    height: 92px;
   }
 }
 
 @media screen and (max-width: 768px) {
   .header-second__title{
-    font-size: 16px;
-  }
-  
-  .header-second__title_big-letters{
-    font-size: 20px;
+    font-size: 17px;
+    line-height: 30px;
   }
   
   .header-second__slogan{
     font-size: 16px;
+    line-height: 32px;
   }
 }
 
 @media screen and (max-width: 425px) {
+  .header-second__description{
+    top: 100%;
+    width: 100%;
+  }
+
+  .header-second__container{
+    width: 90%;
+    padding: 20px 0;
+    justify-items: center;
+    column-gap: 0;
+    row-gap: 10px;
+  }
+
   .header-second__logoDmsh{
-    width: 58px;
-    height: 50px;
+    width: 70px;
+    height: 60px;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
   }
 
   .header-second__title{
     font-size: 12px;
-  }
-  
-  .header-second__title_big-letters{
-    font-size: 24px;
+    line-height: 18px;
+    text-align: center;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
   }
   
   .header-second__slogan{
     font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
   }
 }
