@@ -70,13 +70,6 @@
             </div>
           </div>
 
-          <div class="menu menu_size_mobile">
-            <div class="menu__container">
-              <button type="button" class="menu__home"></button>
-              <button type="button" class="menu__fontIncrease"></button>
-              <button type="button" class="menu__burgerMenu"></button>
-            </div>
-          </div>
         </section>
       </header> 
       
@@ -120,16 +113,18 @@
       </main>
 
       <section class="burgerMenu">
+        <section class="header-first">
+          <div class="header-first__container">
+            <a href="https://spbculture.ru" target="_blank" class="header-first__link">
+              <img class="header-first__imgLink" src="./img/logo_comitetCulture.svg" alt="логотип комитета по культуре">
+              <p class="header-first__nameLink">Комитет по культуре Санкт-Петербурга</p>
+            </a>
+          </div>
+        </section>
         <div class="burgerMenu__container">
           <header class="burgerMenu__header">
             <img src="../img/logo_dmsh.svg" alt="логотип школы" class="burgerMenu__logo">
-            <h1 class="burgerMenu__title">Санкт-Петербургское государственное бюджетное учреждение дополнительного образования 
-              <span class="burgerMenu__title_size_big">«Санкт-Петербургская детская музыкальная школа № 38»</span>
-            </h1>
-            <div class="menu__container menu__container_size_mobile">
-              <button type="button" class="menu__fontIncrease menu__fontIncrease_theme_white"></button>
-              <button type="button" class="burgerMenu__closeMenu"></button>
-            </div>
+            <h1 class="burgerMenu__title">Санкт-Петербургское государственное бюджетное учреждение дополнительного образования «Санкт-Петербургская детская музыкальная школа № 38»</h1>
           </header>
           <nav class="burgerMenu__mmenu">
             <ul class="burgerMenu__menuItems">
@@ -200,6 +195,24 @@
           </section>
         </div>
       </footer>
+
+      <div class="menu menu_size_mobile">
+        <div class="menu__container">
+          <a href="#" target="_self" class="menu__home">
+            <span class="menu__homeImg"></span>
+          </a>
+          <button type="button" class="menu__fontIncrease">
+            <span class="menu__fontIncreaseImg"></span>
+          </button>
+          <button type="button" class="menu__burgerMenu">
+            <span class="menu__burgerMenuImg"></span>
+          </button>
+          <button type="button" class="menu__closeMenu">
+            <span class="menu__closeMenuImg"></span>
+          </button>
+        </div>
+      </div>
+      
     </div>
     <script src="../js/index.js" defer></script>
     <script src="../js/burgerMenu.js" defer></script>

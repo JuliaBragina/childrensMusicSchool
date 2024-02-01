@@ -11,14 +11,8 @@
   justify-content: space-between;
 }
 
-.content__downLoadMore{
-  width: 90%;
-  margin: 0 auto;
-}
-
 .content__button{
   margin: 0 auto;
-  display: block;
 
   width: 38.15vw;
   height: 50px;
@@ -33,7 +27,6 @@
   font-family: 'Montserrat', Arial, sans-serif;
   color: #268237;
 
-  margin-bottom: 30px;
   cursor: pointer;
   transition: all 0.25s ease;
 }
@@ -42,14 +35,38 @@
   color: #fff;
   background-color: #268237;
 }
+
+.content__button_size_desktop{
+  display: block;
+}
+
+.content__button_size_mobile{
+  display: none;
+}
+
 @media screen and (max-width: 1280px) {
   .countent__container{
-    width: 85.93%;
+    width: 85.94%;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 940px) {
   .countent__container{
+    width: 93.75%;
     display: block;
+  }
+
+  .content__button_size_desktop{
+    display: none;
+  }
+
+  .content__button_size_mobile{
+    display: block;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .countent__container{
+    width: 90%;
   }
 }

@@ -1,5 +1,6 @@
 .school-info{
   width: 32.41%;
+  padding-top: 10px;
 }
 
 .school-info_personalPage{
@@ -10,7 +11,7 @@
 .school-info__title{
   margin: 0;
   font-size: 24px;
-  line-height: 26px;
+  line-height: 34px;
   font-weight: 600;
   font-family: 'Montserrat', Arial, sans-serif;
   padding-bottom: 30px;
@@ -24,12 +25,12 @@
 
 .school-info__item{
   margin: 0;
-  font-size: 20px;
-  line-height: 26px;
+  font-size: 24px;
+  line-height: 27px;
   font-weight: 500;
   font-family: 'Montserrat', Arial, sans-serif;
 
-  padding-bottom: 15px;
+  padding-bottom: 20px;
   color: #268237;
   cursor: pointer;
 }
@@ -51,14 +52,70 @@
   .school-info_personalPage{
     width: 90%;
   }
+
+  .school-info__title{
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .school-info__item{
+    font-size: 18px;
+    line-height: 26px;
+    padding-bottom: 15px;
+  }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1280px) {
+  .school-info_personalPage{
+    width: 85.94%;;
+  }
+}
+
+@media screen and (max-width: 940px) {
   .school-info{
     width: 100%;
   }
 
   .school-info_personalPage{
+    width: 93.75%;
+  }
+
+  .school-info__title{
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .school-info__item{
+    font-size: 20px;
+    line-height: 25px;
+    padding-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .school-info_personalPage{
     width: 90%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .school-info{
+    padding-bottom: 50px;
+  }
+
+  .school-info_personalPage{
+    width: 90%;
+  }
+
+  .school-info__title{
+    font-size: 24px;
+    line-height: 29px;
+    padding-bottom: 20px;
+  }
+
+  .school-info__item{
+    font-size: 14px;
+    line-height: 26px;
+    padding-bottom: 10px;
   }
 }
