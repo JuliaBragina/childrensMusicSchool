@@ -1,55 +1,48 @@
-.documents{
-  margin-bottom: 80px;
-}
-
-.documents__container{
-  width: 90%;
-  margin: 0 auto
-}
-
 .documents__title{
   margin: 0;
   font-size: 32px;
-  line-height: 50px;
+  line-height: 39px;
   font-weight: 500;
   font-family: 'Montserrat', Arial, sans-serif;
 
-  padding-bottom: 20px;
+  padding-bottom: 40px;
 }
 
 .documents__items{
   padding: 0;
   margin: 0;
-  list-style-type: none;
-
-  margin: 0;
-  font-size: 24px;
-  line-height: 26px;
-  font-weight: 500;
-  font-family: 'Montserrat', Arial, sans-serif;
-  padding-bottom: 15px;
+  padding-bottom: 80px;
 }
 
 .documents__item{
+  padding-bottom: 20px;
+  list-style-type: none;
+}
+
+.documents__itemTitle{
   margin: 0;
-  padding-bottom: 27px;
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: 500;
+  font-family: 'Montserrat', Arial, sans-serif;
+
+  padding-bottom: 30px;
 }
 
 .documents__subItems{
   margin: 0;
   padding: 0;
-  padding-top: 20px;
 }
 
 .documents__subItem{
   margin: 0;
   padding: 0;
-  font-size: 20px;
-  line-height: 22px;
+  font-size: 24px;
+  line-height: 27px;
   font-weight: 500;
   font-family: 'Georgia', Arial, sans-serif;
 
-  padding-bottom: 10px;
+  padding-bottom: 20px;
   display: flex;
   align-items: center;
   gap: 20px;
@@ -61,6 +54,12 @@
   color: #268237;
 }
 
+.documents__img{
+  width: 25px;
+  height: 27px;
+  object-fit: contain;
+}
+
 .documents__link{
   width: auto;
   height: 100%;
@@ -68,16 +67,45 @@
   color: inherit;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 940px) {
   .documents__title{
     font-size: 24px;
+    line-height: 32px;
+    padding-bottom: 30px;
   }
 
-  .documents__items{
-    font-size: 18px;
+  .documents__itemTitle{
+    font-size: 20px;
+    line-height: 27px;
   }
 
   .documents__subItem{
-    font-size: 18px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .documents__title{
+    font-size: 20px;
+    line-height: 27px;
+  }
+
+  .documents__items{
+    padding-bottom: 50px;
+  }
+
+  .documents__itemTitle{
+    font-size: 16px;
+    line-height: 34px;
+
+    padding-bottom: 20px;
+  }
+
+  .documents__subItem{
+    font-size: 16px;
+    line-height: 20px;
+
+    padding-bottom: 15px;
   }
 }

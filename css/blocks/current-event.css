@@ -21,6 +21,11 @@
 @media screen and (max-width: 940px) {
   .current-event{
     width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .current-event__events{
+    margin-bottom: 30px;
   }
 }
 

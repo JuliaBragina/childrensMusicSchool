@@ -137,6 +137,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 10px;
 }
 
 .menu__logo{
@@ -244,6 +245,7 @@
 
   .title{
     display: block;
+    margin-bottom: 10px;
   }
 
   .title__container{

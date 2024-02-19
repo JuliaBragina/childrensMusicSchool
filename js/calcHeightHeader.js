@@ -1,7 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
-  window.addEventListener('resize', updateMainMargin);
+  var windowSize = window.addEventListener('resize', updateMainMargin);
   
-  // Вызываем функцию сразу после загрузки страницы
   updateMainMargin();
 
   function updateMainMargin() {
@@ -9,7 +8,11 @@ document.addEventListener('DOMContentLoaded', function () {
     var mainElement = document.querySelector('.content');
       
     if (mainElement) {
-      mainElement.style.marginTop = headerSecondHeight + 'px';
+      if (windowSize > 940) {
+        mainElement.style.marginTop = headerSecondHeight + 70 + 'px';
+      } else {
+        mainElement.style.marginTop = headerSecondHeight + 30 + 'px';
+      }
     }
   }
 });

@@ -9,10 +9,13 @@
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
+
+  margin-bottom: 40px;
 }
 
 .content__button{
   margin: 0 auto;
+  display: block;
 
   width: 38.15vw;
   height: 50px;
@@ -51,9 +54,15 @@
 }
 
 @media screen and (max-width: 940px) {
+  .content{
+    margin-bottom: 50px;
+  }
+
   .countent__container{
     width: 93.75%;
     display: block;
+
+    margin-bottom: 0;
   }
 
   .content__button_size_desktop{
