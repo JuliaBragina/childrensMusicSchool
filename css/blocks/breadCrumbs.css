@@ -1,0 +1,106 @@
+.breadCrumbs{
+  margin-bottom: 10px;
+}
+
+.breadCrumbs__container{
+  width: 90%;
+  margin: 0 auto;
+}
+
+.breadCrumbs__items{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.breadCrumbs__item{
+  margin-right: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.breadCrumbs__link{
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  font-family: 'Montserrat', Arial, sans-serif;
+
+  position: relative;
+  margin-right: 10px;
+
+  text-decoration: none;
+  color: #268237;
+}
+
+.breadCrumbs__link:hover{
+  color: #000;
+}
+
+.breadCrumbs__imgItem{
+  width: 25px;
+  height: 25px;
+  object-fit: contain;
+
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.breadCrumbs__img{
+  width: 10px;
+  height: 20px;
+}
+
+.breadCrumbs__text{
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  font-family: 'Montserrat', Arial, sans-serif;
+
+  position: relative;
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 1280px) {
+  .breadCrumbs__container{
+    width: 85.94%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+
+}
+  
+@media screen and (max-width: 940px) {
+  .breadCrumbs__container{
+    width: 93.75%;
+  }
+
+}
+  
+@media screen and (max-width: 425px) {
+  .breadCrumbs__container{
+    width: 90%;
+  }
+
+  .breadCrumbs__imgItem{
+    width: 20px;
+    height: 20px;
+  }
+
+  .breadCrumbs__text{
+    font-size: 10px;
+    line-height: 12px;
+  }
+
+  .breadCrumbs__img{
+    width: 10px;
+    height: 15px;
+  }
+}

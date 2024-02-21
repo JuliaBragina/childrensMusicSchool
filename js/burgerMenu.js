@@ -1,7 +1,7 @@
 const burgerButton = document.querySelector('.menu__burgerMenu');
 const burgerCloseButton = document.querySelector('.menu__closeMenu');
 const burgerMenu = document.querySelector('.burgerMenu');
-const buttonSubItem = document.querySelectorAll('.burgerMenu__menuItem');
+const buttonSubItem = document.querySelectorAll('.burgerMenu__text');
 const page = document.querySelector('.root');
 
 burgerButton.addEventListener('click', ()=> {
@@ -21,6 +21,6 @@ burgerCloseButton.addEventListener('click', ()=> {
 buttonSubItem.forEach(item => {
   item.addEventListener('click', ()=> {
     //item.children.forEach(child => (child === 'burgerMenu__subItems') && child.classList.classList.add('burgerMenu__subItems_is_open'));
-    item.children[0].classList.toggle('burgerMenu__subItems_is_open');
+    item.parentNode.children[1].classList.toggle('burgerMenu__subItems_is_open');
   });
 });

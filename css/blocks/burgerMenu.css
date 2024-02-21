@@ -75,18 +75,8 @@
   font-family: 'Montserrat', Arial, sans-serif;
   color: #268237;
   cursor: pointer;
-  position: relative;
   margin-right: 17px;
   text-align: right;
-}
-
-.burgerMenu__menuItem::after{
-  position: absolute;
-  top: -5px;
-  right: -15px;
-  content: url("../../img/button_accordeon.svg");
-  width: 11px;
-  height: 36px;
 }
 
 .burgerMenu__menuItem:hover{
@@ -129,7 +119,44 @@
   color: #000;
 }
 
-.burgerMenu__link{
+.burgerMenu__link, .burgerMenu__text{
   text-decoration: none;
   color: inherit;
+}
+
+.burgerMenu__text{
+  position: relative;
+}
+
+.burgerMenu__text::after{
+  position: absolute;
+  top: -5px;
+  right: -15px;
+  content: url("../../img/button_accordeon.svg");
+  width: 11px;
+  height: 36px;
+}
+
+  
+@media screen and (max-width: 625px) {
+  .burgerMenu__title{
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+  
+@media screen and (max-width: 425px) {
+  .burgerMenu__container{
+    width: 90%;
+  }
+
+  .burgerMenu__logo{
+    width: 70px;
+    height: 60px;
+  }
+
+  .burgerMenu__title{
+    font-size: 10px;
+    line-height: 12px;
+  }
 }

@@ -87,7 +87,7 @@
 
 @media screen and (max-width: 1280px) {
   .event__container{
-    width: 93.98%;
+    width: 85.94%;
   }
 
   .event__description{
@@ -109,7 +109,7 @@
   }
 
   .event__description{
-    width: 85.94%;
+    width: 93.75%;
   }
 
   .event__img, .event__container{

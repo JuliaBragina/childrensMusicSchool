@@ -21,7 +21,7 @@
   padding: 66px 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 20px;
+  gap: 40px;
 }
 
 .sections__title{
@@ -103,11 +103,6 @@
   display: block;
 }
 
-.sections__img_size_small{
-  width: 320px;
-  height: 320px;
-}
-
 @media screen and (max-width: 1280px) {
   .sections__container{
     width: 85.94%;
@@ -124,7 +119,7 @@
 @media screen and (max-width: 940px) {
   .sections__container{
     width: 93.75%;
-    padding: 41px 0;
+    padding: 30px 0;
   }
 
   .sections__title{
@@ -154,11 +149,11 @@
   .section__subTitle{
     font-size: 32px;
     line-height: 34px;
-    padding-bottom: 23px;
+    padding-bottom: 20px;
   }
 
   .sections__img{
-    padding-bottom: 23px;
+    padding-bottom: 20px;
   }
 }
   

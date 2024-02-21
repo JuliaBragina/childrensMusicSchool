@@ -140,7 +140,7 @@
     align-items: center;
 
     padding: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
   }
 
   .school-info__activeItem{
@@ -217,7 +217,7 @@
   }
 
   .school-info__link{
-    padding: 10px 5px;
+    padding: 15px 10px;
   }
 
   .school-info__item_active{

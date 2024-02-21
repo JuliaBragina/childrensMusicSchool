@@ -30,14 +30,14 @@
               <nav class="menu__navigation menu__navigation_theme_white">
                 <ul class="menu__items menu__items_theme_white">
                   <li class="menu__item menu__item_theme_white"><a href="../index.html" target=__blank class="menu__link">Главная</a></li>
-                  <li class="menu__item menu__item_theme_white"><a href="#" class="menu__link">О школе</a>
+                  <li class="menu__item menu__item_theme_white"><span class="menu__text">О школе</span>
                     <ul class="menu__subItems menu__subItems_theme_white">
-                      <li class="menu__subItem menu__subItem_theme_white"><a href="#" class="menu__link">Сведения об образовательной организации</a></li>
-                      <li class="menu__subItem menu__subItem_theme_white"><a href="#" class="menu__link">Отделы и секции</a></li>
-                      <li class="menu__subItem menu__subItem_theme_white"><a href="#" class="menu__link">История школы</a></li>
+                      <li class="menu__subItem menu__subItem_theme_white"><a href="./sveden.html" class="menu__link">Сведения об образовательной организации</a></li>
+                      <li class="menu__subItem menu__subItem_theme_white"><a href="./sveden.html" class="menu__link">Отделы и секции</a></li>
+                      <li class="menu__subItem menu__subItem_theme_white"><a href="./schools-history.html" class="menu__link">История школы</a></li>
                     </ul>
                   </li>
-                  <li class="menu__item menu__item_theme_white"><a href="#" class="menu__link">Обучение</a>
+                  <li class="menu__item menu__item_theme_white"><span class="menu__text">Обучение</span>
                     <ul class="menu__subItems menu__subItems_theme_white">
                       <li class="menu__subItem menu__subItem_theme_white"><a href="#" class="menu__link">Образовательные программы</a></li>
                       <li class="menu__subItem menu__subItem_theme_white"><a href="#" class="menu__link">План работы</a></li>
@@ -45,7 +45,7 @@
                       <li class="menu__subItem menu__subItem_theme_white"><a href="#" class="menu__link">Экзамены и зачёты</a></li>
                     </ul>
                   </li>
-                  <li class="menu__item menu__item_theme_white"><a href="#" class="menu__link">Родителям</a>
+                  <li class="menu__item menu__item_theme_white"><span class="menu__text">Родителям</span>
                     <ul class="menu__subItems menu__subItems_theme_white">
                       <li class="menu__subItem menu__subItem_theme_white"><a href="#" class="menu__link">Приём в школу</a></li>
                       <li class="menu__subItem menu__subItem_theme_white"><a href="#" class="menu__link">Платные образовательные услуги</a></li>
@@ -55,7 +55,7 @@
                       <li class="menu__subItem menu__subItem_theme_white"><a href="#" class="menu__link">Независимая оценка качества</a></li>
                     </ul>
                   </li>
-                  <li class="menu__item menu__item_theme_white"><a href="../pages/achivments.html" class="menu__link">Достижения</a></li>
+                  <li class="menu__item menu__item_theme_white"><a href="./achivments.html" class="menu__link">Достижения</a></li>
                   <li class="menu__item menu__item_theme_white"><a class="menu__link">Контакты</a></li>
                 </ul>
               </nav>
@@ -72,7 +72,27 @@
 
         </section>
 
-      </header> 
+      </header>
+
+      <div class="breadCrumbs">
+        <div class="breadCrumbs__container">
+          <ul class="breadCrumbs__items">
+            <li class="breadCrumbs__item">
+              <a class="breadCrumbs__link" href="/">
+                <img src="../img/home-page.svg" alt="homePage" class="breadCrumbs__imgItem">
+              </a>
+              <img src="../img/breadCrumbs.svg" class="breadCrumbs__img" alt="--"> 
+            </li>
+            <li class="breadCrumbs__item">
+              <a class="breadCrumbs__link">О школе</a>
+              <img src="../img/breadCrumbs.svg" class="breadCrumbs__img" alt="--"> 
+            </li>
+            <li class="breadCrumbs__item">
+              <span class="breadCrumbs__text">Отделы и секции</span>
+            </li>
+          </ul>
+        </div>
+      </div>
 
       <main class="sections">
         <section class="sections__section">
@@ -137,12 +157,12 @@
         <section class="sections__section sections__section_theme_greyLight">
           <div class="sections__container sections__container_flex">
             <div class="sections__mainInfo sections__mainInfo_desctopSize">
-              <img class="sections__img sections__img_size_small" src="../img/wind.svg" alt="Изображении секции/отдела">
+              <img class="sections__img" src="../img/wind.svg" alt="Изображении секции/отдела">
             </div>
             <section class="sections__mainInfo">
               <h2 class="section__subTitle">Отдел духовых и ударных инструментов</h2>
               <div class="sections__mainInfo sections__mainInfo_mobileSize">
-                <img class="sections__img sections__img_size_small" src="../img/wind.svg" alt="Изображении секции/отдела">
+                <img class="sections__img" src="../img/wind.svg" alt="Изображении секции/отдела">
               </div>
               <button type="button" class="sections__button">
                 <a class="sections__link" src="#">Узнать подробнее</a>
@@ -217,17 +237,17 @@
             <img src="../img/logo_dmsh.svg" alt="логотип школы" class="burgerMenu__logo">
             <h1 class="burgerMenu__title">Санкт-Петербургское государственное бюджетное учреждение дополнительного образования «Санкт-Петербургская детская музыкальная школа № 38»</h1>
           </header>
-          <nav class="burgerMenu__mmenu">
+          <nav class="burgerMenu__menu">
             <ul class="burgerMenu__menuItems">
-              <li class="burgerMenu__menuItem"><a href="../index.html" target=__blank class="burgerMenu__link">Главная</a></li>
-              <li class="burgerMenu__menuItem"><a href="#" target=__blank class="burgerMenu__link">О школе</a>
+              <li class="burgerMenu__menuItem"><a href="/" class="burgerMenu__link">Главная</a>
+              <li class="burgerMenu__menuItem"><span class="burgerMenu__text">О школе</span>
                 <ul class="burgerMenu__subItems">
-                  <li class="burgerMenu__subItem"><a href="#" class="burgerMenu__link">Сведения об образовательной организации</a></li>
-                  <li class="burgerMenu__subItem"><a href="#" class="burgerMenu__link">Отделы и секции</a></li>
-                  <li class="burgerMenu__subItem"><a href="#" class="burgerMenu__link">История школы</a></li>
+                  <li class="burgerMenu__subItem"><a href="./sveden.html" class="burgerMenu__link">Сведения об образовательной организации</a></li>
+                  <li class="burgerMenu__subItem"><a href="./sections.html" class="burgerMenu__link">Отделы и секции</a></li>
+                  <li class="burgerMenu__subItem"><a href="./schools-history.html" class="burgerMenu__link">История школы</a></li>
                 </ul>
               </li>
-              <li class="burgerMenu__menuItem"><a href="#" target=__blank class="burgerMenu__link">Обучение</a>
+              <li class="burgerMenu__menuItem"><span class="burgerMenu__text">Обучение</span>
                 <ul class="burgerMenu__subItems">
                   <li class="burgerMenu__subItem"><a href="#" class="burgerMenu__link">Образовательные программы</a></li>
                   <li class="burgerMenu__subItem"><a href="#" class="burgerMenu__link">План работы</a></li>
@@ -235,7 +255,7 @@
                   <li class="burgerMenu__subItem"><a href="#" class="burgerMenu__link">Экзамены и зачёты</a></li>
                 </ul>
               </li>
-              <li class="burgerMenu__menuItem"><a href="#" target=__blank class="burgerMenu__link">Родителям</a>
+              <li class="burgerMenu__menuItem"><span class="burgerMenu__text">Родителям</span>
                 <ul class="burgerMenu__subItems">
                   <li class="burgerMenu__subItem"><a href="#" class="burgerMenu__link">Приём в школу</a></li>
                   <li class="burgerMenu__subItem"><a href="#" class="burgerMenu__link">Платные образовательные услуги</a></li>
@@ -245,7 +265,7 @@
                   <li class="burgerMenu__subItem"><a href="#" class="burgerMenu__link">Независимая оценка качества</a></li>
                 </ul>
               </li>
-              <li class="burgerMenu__menuItem"><a href="../pages/achivments.html" target=__blank class="burgerMenu__link">Достижения</a></li>
+              <li class="burgerMenu__menuItem"><a href="./achivments.html" class="burgerMenu__link">Достижения</a></li>
               <li class="burgerMenu__menuItem"><a href="#" class="burgerMenu__link">Контакты</a></li>
             </ul>
           </nav>

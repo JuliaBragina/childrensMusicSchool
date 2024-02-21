@@ -137,7 +137,6 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 10px;
 }
 
 .menu__logo{
@@ -210,6 +209,10 @@
   .menu__item_theme_white{
     font-size: 18px;
     line-height: 22px;
+  }
+
+  .menu__container{
+    padding: 15px 0;
   }
 
   .menu__logo{

@@ -1,3 +1,7 @@
+.schools-history{
+  margin-bottom: 80px;
+}
+
 .schools-history__container{
   width: 90%;
   margin: 0 auto
@@ -10,13 +14,58 @@
   font-weight: 600;
   font-family: 'Montserrat', Arial, sans-serif;
 
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 .schools-history__text{
   margin: 0;
-  font-size: 25px;
+  font-size: 24px;
   line-height: 40px;
   font-weight: 400;
   font-family: 'Georgia', Arial, sans-serif;
+}
+
+@media screen and (max-width: 1280px) {
+  .schools-history__container{
+    width: 85.94%;
+  }
+}
+
+@media screen and (max-width: 940px) {
+
+  .schools-history__container{
+    width: 93.75%;
+  }
+
+  .schools-history__title{
+    font-size: 32px;
+    line-height: 40px;
+
+    margin-bottom: 30px;
+  }
+
+  .schools-history__text{
+    font-size: 20px;
+    line-height: 32px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .schools-history{
+    margin-bottom: 50px;
+  }
+
+  .schools-history__container{
+    width: 90%;
+  }
+
+  .schools-history__title{
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .schools-history__text{
+    font-size: 16px;
+    line-height: 27px;
+  }
 }
