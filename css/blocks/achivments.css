@@ -1,70 +1,198 @@
 .achivments{
+  margin-bottom: 80px;
+}
+
+.achivments__container{
   width: 90%;
   margin: 0 auto;
-  margin-bottom: 80px;
+  padding: 40px 0;
 }
 
 .achivments__title{
   margin: 0;
-  font-size: 24px;
-  line-height: 26px;
+  font-size: 40px;
+  line-height: 50px;
   font-weight: 600;
   font-family: 'Montserrat', Arial, sans-serif;
-  padding-bottom: 30px;
+
+  margin-bottom: 40px;
 }
 
-.achivments__section{
-  
-}
-
-
-.achivments__yearTitle{
+.achivments__description{
   margin: 0;
   font-size: 24px;
-  line-height: 26px;
-  font-weight: 500;
-  font-family: 'Montserrat', Arial, sans-serif;
-  padding-bottom: 30px;
+  line-height: 40px;
+  font-weight: 400;
+  font-family: 'Georgia', Arial, sans-serif;
+  padding-bottom: 40px;
 }
 
-.achivments__forYear{
-  width: 100%;
-}
-
-.achivments__container{
+.achivments__blocks{
   display: grid;
-  grid-template-columns: repeat(4, minmax(150px, 270px));
-  gap: 20px;
-  align-items: stretch;
+  grid-template-columns: repeat(4, 1fr);
   justify-content: space-between;
+  gap: 45px;
+
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
 }
 
-.achivments__img{
+.achivments__block{
   width: 100%;
-  height: auto;
+  height: 180px;
+  box-shadow: 0 0 11px 0 rgba(113, 113, 113, 0.4);
+  padding: 10px 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+
   cursor: pointer;
+  
+  -webkit-transition: all 0.3s ease;;
+  -moz-transition: all 0.3s ease;;
+  -o-transition: all 0.3s ease;;
+  transition: all 0.3s ease;
 }
 
-.achivments__img:hover{
-  transition: all 0.3s ease;
-  box-shadow: 0 7px 10px #737272;
+.achivments__link{
+  text-decoration: none;
+}
+
+.achivments__subTitle{
+  margin: 0;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 600;
+  font-family: 'Montserrat', Arial, sans-serif;
+
+  color: #000;
+}
+
+.achivments__subSubTitle{
+  margin: 0;
+  font-size: 80px;
+  line-height: 91px;
+  font-weight: 800;
+  font-family: 'Georgia', Arial, sans-serif;
+
+  color: #205F68;
+}
+
+.achivments__block:hover{
+  background-color: #268237;
+  box-shadow: 0 0 20px 6px rgba(113, 113, 113, 0.5);
+}
+
+.achivments__block:hover .achivments__subSubTitle{
+  color: #fff;
+}
+
+.achivments__block:hover .achivments__subTitle{
+  color: #fff;
+}
+
+@media screen and (max-width: 1280px) {
+  .achivments__container{
+    width: 85.94%;
+  }
 }
 
 @media screen and (max-width: 1024px) {
+  .achivments__blocks{
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .achivments__block{
+    height: 165px;
+  }
+
+  .achivments__subSubTitle{
+    font-size: 64px;
+    line-height: 73px;
+  }
+
+  .achivments__subTitle{
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+  
+@media screen and (max-width: 940px) {
   .achivments__container{
-    grid-template-columns: repeat(3, minmax(150px, 270px));
+    width: 93.75%;
+  }
+
+  .achivments__block{
+    height: 130px;
+  }
+
+  .achivments__title{
+    font-size: 32px;
+    line-height: 40px;
+
+    margin-bottom: 30px;
+  }
+
+  .achivments__description{
+    font-size: 20px;
+    line-height: 32px;
+    padding-bottom: 30px;
+  }
+
+  .achivments__subSubTitle{
+    font-size: 48px;
+    line-height: 55px;
+  }
+
+  .achivments__subTitle{
+    font-size: 16px;
+    line-height: 20px;
   }
 }
 
-@media screen and (max-width: 600px) {
-  .achivments__container{
-    grid-template-columns: repeat(2, minmax(150px, 270px));
+@media screen and (max-width: 700px) {
+  .achivments__blocks{
+    grid-template-columns: repeat(2, 1fr);
   }
 }
-
+  
 @media screen and (max-width: 425px) {
+  .achivments{
+    margin-bottom: 50px;
+  }
+
   .achivments__container{
+    width: 90%;
+  }
+
+  .achivments__blocks{
     grid-template-columns: 1fr;
-    justify-content: center;
+  }
+
+  .achivments__block{
+    height: 178px;
+  }
+
+  .achivments__title{
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .achivments__description{
+    font-size: 16px;
+    line-height: 27px;
+  }
+
+  .achivments__subSubTitle{
+    font-size: 64px;
+    line-height: 73px;
+  }
+
+  .achivments__subTitle{
+    font-size: 18px;
+    line-height: 22px;
   }
 }

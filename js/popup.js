@@ -1,6 +1,6 @@
 const popupCloseButton = document.querySelector('.popup__buttonClose');
 const popupImg = document.querySelector('.popup__image');
-const achivesImg = document.querySelectorAll(".achivments__img");
+const achivesImg = document.querySelectorAll(".achivment__img");
 const popup = document.querySelector('.popup');
 
 achivesImg.forEach(item => {
