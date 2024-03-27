@@ -11,4 +11,4 @@ achivesImg.forEach(item => {
   })
 })
 
-popupCloseButton.addEventListener('click', () => popup.classList.remove('popup_is_opened'))
+popupCloseButton.addEventListener('click', () => popup.classList.remove('popup_is_opened'));

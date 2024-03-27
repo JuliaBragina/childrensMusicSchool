@@ -18,10 +18,10 @@
 @import url(./blocks/burgerMenu.css);
 @import url(./blocks/achivment.css);
 @import url(./blocks/documents.css);
-@import url(./blocks/schools-history.css);
 @import url(./blocks/sections.css);
 @import url(./blocks/breadCrumbs.css);
 @import url(./blocks/achivments.css);
+@import url(./blocks/popupFeedback.css);
 
 @import url(./blocks/current-event.css);
 

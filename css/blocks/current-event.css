@@ -2,16 +2,6 @@
   width: 61.73%;
 }
 
-.current-event__title{
-  margin: 0;
-  font-size: 40px;
-  line-height: 50px;
-  font-weight: 600;
-  font-family: 'Montserrat', Arial, sans-serif;
-
-  margin-bottom: 30px;
-}
-
 @media screen and (max-width: 1380px) {
   .current-event{
     width: 62.5%;
@@ -26,14 +16,5 @@
 
   .current-event__events{
     margin-bottom: 30px;
-  }
-}
-
-@media screen and (max-width: 425px) {
-  .current-event__title{
-    font-size: 32px;
-    line-height: 40px;
-
-    margin-bottom: 20px;
   }
 }
