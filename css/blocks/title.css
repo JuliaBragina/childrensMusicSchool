@@ -1,0 +1,57 @@
+.title{
+  display: none;
+}
+
+@media screen and (max-width: 940px) {
+  .menu{
+    width: 100%;
+    background: #fff;
+    z-index: 100;
+    box-shadow: 0px -4px 20px 3px rgba(0,0,0,.1)
+  }
+  
+  .menu__logo{
+    width: 102px;
+    height: 87px;
+  }
+  
+  .title{
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .title__container{
+    width: 93.75%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+    padding: 10px 0;
+  }
+  
+  .title__menu{
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 600;
+    font-family: 'Montserrat', Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 525px) {
+  .menu__logo{
+    width: 70px;
+    height: 60px;
+  }
+  
+  .title__container{
+    gap: 15px;
+  }
+  
+  .title__menu{
+    font-size: 10px;
+    line-height: 12px;
+  }
+}

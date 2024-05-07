@@ -61,10 +61,20 @@
 .breadCrumbs__imgItem{
   width: 25px;
   height: 25px;
-  object-fit: contain;
+  background-image: url('../../img/home-page-green.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: transparent;
 
   cursor: pointer;
   margin-right: 10px;
+  display: block;
+  padding: 0;
+}
+
+.breadCrumbs__imgItem:hover{
+  background-image: url('../../img/home-page-black.svg');
 }
 
 .breadCrumbs__text{
@@ -91,7 +101,6 @@
   .breadCrumbs__container{
     width: 93.75%;
   }
-
 }
   
 @media screen and (max-width: 425px) {

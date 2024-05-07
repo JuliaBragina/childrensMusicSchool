@@ -1,15 +1,15 @@
 document.addEventListener('DOMContentLoaded', function () {
-  var slider = document.querySelector('.slideShow__container');
-  var slides = document.querySelectorAll('.slideShow__slide');
-  var nextButton = document.querySelector('.slideShow__next');
-  var prevButton = document.querySelector('.slideShow__prev');
+  const slider = document.querySelector('.slideShow__container');
+  const slides = document.querySelectorAll('.slideShow__slide');
+  const nextButton = document.querySelector('.slideShow__next');
+  const prevButton = document.querySelector('.slideShow__prev');
 
-  var clickCounter = 0;
-  var slideWidth = slides[0].offsetWidth;
+  let clickCounter = 0;
+  let slideWidth = slides[0].offsetWidth;
 
   function updateButtons() {
-    prevButton.classList.toggle('is-inactive', clickCounter === 0);
-    nextButton.classList.toggle('is-inactive', clickCounter === slides.length - 1);
+    prevButton.classList.toggle('slideShow__button_isnactive', clickCounter === 0);
+    nextButton.classList.toggle('slideShow__button_isnactive', clickCounter === slides.length - 1);
   }
 
   function slideTo(index) {

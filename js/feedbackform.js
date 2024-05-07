@@ -11,12 +11,6 @@ function checkValidity(event) {
 
 applicantForm.addEventListener('input', checkValidity);
 
-function customValidity(input) {
-  if (input.value.length <= 2) {
-    input.nextElementSibling.classList.add('.popupFeedback__error_active');
-  }
-}
-
 function handlerSendData(event) {
   event.preventDefault();
   if(Array.from(serializeForm(applicantForm).entries())) {
@@ -44,11 +38,9 @@ function handleBlur(event) {
   const hint = input.nextElementSibling;
   if (input.value === '' || !hint.classList.contains('popupFeedback__hint_active')) {
     label.classList.remove('popupFeedback__label_active');
-    customValidity(event.target);
   }
   if (hint.classList.contains('popupFeedback__hint_active')) {
     hint.classList.remove('popupFeedback__hint_active');
-    customValidity(event.target);
   }
 }
 

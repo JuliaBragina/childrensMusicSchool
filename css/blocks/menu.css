@@ -10,10 +10,6 @@
   transform: translate(-50%, 0);
 }
 
-.title{
-  display: none;
-}
-
 .menu_size_mobile{
   display: none;
 }
@@ -232,7 +228,7 @@
   }
 
   .menu__item_theme_white{
-    font-size: 16px;
+    font-size: 18px;
     line-height: 22px;
   }
 }
@@ -248,30 +244,6 @@
   .menu__logo{
     width: 102px;
     height: 87px;
-  }
-
-  .title{
-    display: block;
-    margin-bottom: 10px;
-  }
-
-  .title__container{
-    width: 93.75%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 15px;
-    padding: 10px 0;
-  }
-
-  .title__menu{
-    font-size: 18px;
-    line-height: 26px;
-    font-weight: 600;
-    font-family: 'Montserrat', Arial, sans-serif;
-    padding: 0;
-    margin: 0;
   }
 
   .menu_size_destop{
@@ -381,15 +353,6 @@
   .menu__logo{
     width: 70px;
     height: 60px;
-  }
-
-  .title__container{
-    gap: 15px;
-  }
-
-  .title__menu{
-    font-size: 10px;
-    line-height: 12px;
   }
 
   .menu__container{

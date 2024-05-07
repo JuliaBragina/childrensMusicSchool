@@ -1,11 +1,11 @@
 document.addEventListener('DOMContentLoaded', function () {
-  var windowSize = window.addEventListener('resize', updateMainMargin);
+  const windowSize = window.addEventListener('resize', updateMainMargin);
   
   updateMainMargin();
 
   function updateMainMargin() {
-    var headerSecondHeight = document.querySelector('.header-second__description')?.offsetHeight;
-    var mainElement = document.querySelector('.content');
+    const headerSecondHeight = document.querySelector('.header-second__description')?.offsetHeight;
+    const mainElement = document.querySelector('.content');
       
     if (mainElement) {
       if (windowSize > 940) {
