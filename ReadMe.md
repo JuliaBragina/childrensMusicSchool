@@ -1,4 +1,4 @@
-# Children's Music School No. 38
+# Children's Music School
 
 ## О проекте
 

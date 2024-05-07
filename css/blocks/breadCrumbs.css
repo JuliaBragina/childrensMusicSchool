@@ -18,11 +18,27 @@
 }
 
 .breadCrumbs__item{
-  margin-right: 10px;
+  margin-right: 20px;
 
   display: flex;
   align-items: center;
   justify-content: flex-start;
+
+  position: relative;
+}
+
+.breadCrumbs__item:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-image: url('../../img/breadCrumbs.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 10px;
+  height: 20px;
+  display: inline-block;
+  right: -5px;
 }
 
 .breadCrumbs__link{
@@ -32,8 +48,7 @@
   font-weight: 400;
   font-family: 'Montserrat', Arial, sans-serif;
 
-  position: relative;
-  margin-right: 10px;
+  margin-right: 20px;
 
   text-decoration: none;
   color: #268237;
@@ -52,11 +67,6 @@
   margin-right: 10px;
 }
 
-.breadCrumbs__img{
-  width: 10px;
-  height: 20px;
-}
-
 .breadCrumbs__text{
   font-size: 14px;
   line-height: 16px;
@@ -64,7 +74,7 @@
   font-family: 'Montserrat', Arial, sans-serif;
 
   position: relative;
-  margin-right: 10px;
+  margin-right: 20px;
 }
 
 @media screen and (max-width: 1280px) {

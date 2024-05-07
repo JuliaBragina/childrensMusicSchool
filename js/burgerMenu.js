@@ -20,7 +20,6 @@ burgerCloseButton.addEventListener('click', ()=> {
 
 buttonSubItem.forEach(item => {
   item.addEventListener('click', ()=> {
-    //item.children.forEach(child => (child === 'burgerMenu__subItems') && child.classList.classList.add('burgerMenu__subItems_is_open'));
     item.parentNode.children[1].classList.toggle('burgerMenu__subItems_is_open');
   });
 });

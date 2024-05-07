@@ -7,7 +7,7 @@
     <meta name="description" content="Сайт детской музыкальной школы 38"> 
     <meta name="keywords" content="музыкальная школа, Санкт-Петербург, школа, музыка">
     <link rel="stylesheet" href="../css/index.css">
-    <title>Сайт детской музыкальной школы 38</title>
+    <title>Санкт-Петербургское государственное бюджетное учреждение дополнительного образования «Санкт-Петербургская детская музыкальная школа № 38»</title>
   </head>
   <body class="root">
     <div class="page">
@@ -24,12 +24,14 @@
 
         <section class="header-second">
           <div class="menu menu_size_destop menu_theme_white">
-            <img src="../img/logo_dmsh.svg" alt="логотип" class="menu__logo">
+            <a class="menu__homePage" href="../index.html">
+              <img src="../img/logo_dmsh.svg" alt="Логотип сайта" class="menu__logo">
+            </a>
   
             <div class="menu__container menu__container_theme_white">
               <nav class="menu__navigation menu__navigation_theme_white">
                 <ul class="menu__items menu__items_theme_white">
-                  <li class="menu__item menu__item_theme_white"><a href="../index.html" target=__blank class="menu__link">Главная</a></li>
+                  <li class="menu__item menu__item_theme_white"><a href="../index.html" target="_blank" class="menu__link">Главная</a></li>
                   <li class="menu__item menu__item_theme_white"><span class="menu__text">О школе</span>
                     <ul class="menu__subItems menu__subItems_theme_white">
                       <li class="menu__subItem menu__subItem_theme_white"><a href="./sveden.html" class="menu__link">Сведения об образовательной организации</a></li>
@@ -59,7 +61,7 @@
                   <li class="menu__item menu__item_theme_white"><a class="menu__link">Контакты</a></li>
                 </ul>
               </nav>
-              <button type="button" class="menu__fontIncrease menu__fontIncrease_theme_white"></button>
+              <button type="button" name="improveAccessibility_theme_white" aria-label="Кнопка улучшенная доступности" class="menu__fontIncrease menu__fontIncrease_theme_white"></button>
             </div>
           </div>
 
@@ -79,16 +81,14 @@
           <ul class="breadCrumbs__items">
             <li class="breadCrumbs__item">
               <a class="breadCrumbs__link" href="/">
-                <img src="../img/home-page.svg" alt="homePage" class="breadCrumbs__imgItem">
+                <img src="../img/home-page.svg" alt="На главную страницу" class="breadCrumbs__imgItem">
               </a>
-              <img src="../img/breadCrumbs.svg" class="breadCrumbs__img" alt="--"> 
             </li>
             <li class="breadCrumbs__item">
-              <a href="./sveden.html" class="breadCrumbs__link">О школе</a>
-              <img src="../img/breadCrumbs.svg" class="breadCrumbs__img" alt="--"> 
+              <a class="breadCrumbs__link" href="./achivments.html">Достижения</a>
             </li>
             <li class="breadCrumbs__item">
-              <span class="breadCrumbs__text">Сведения об образовательной организации</span>
+              <span class="breadCrumbs__text">Достижения за 2023</span>
             </li>
           </ul>
         </div>
@@ -119,7 +119,7 @@
             </nav>
 
             <nav class="school-info__navigation school-info__navigation_size_mobile">
-              <button type="button" class="school-info__button">
+              <button type="button" name="openMenuAboutSchool" class="school-info__button">
                 <span class="school-info__activeItem">Документы</span>
                 <span class="school-info__buttonImg"></span>
               </button>
@@ -141,7 +141,7 @@
             </nav>
 
             <section class="documents">
-              <h2 class="documents__title">Документы</h2>
+              <h3 class="documents__title">Документы</h3>
               <ul class="documents__items">
                 <li class="documents__item"><h3 class="documents__itemTitle">Учредительные и организационные документы</h3>
                   <ul class="documents__subItems">
@@ -218,7 +218,7 @@
         <div class="burgerMenu__container">
           <header class="burgerMenu__header">
             <img src="../img/logo_dmsh.svg" alt="логотип школы" class="burgerMenu__logo">
-            <h1 class="burgerMenu__title">Санкт-Петербургское государственное бюджетное учреждение дополнительного образования «Санкт-Петербургская детская музыкальная школа № 38»</h1>
+            <h2 class="burgerMenu__title">Санкт-Петербургское государственное бюджетное учреждение дополнительного образования «Санкт-Петербургская детская музыкальная школа № 38»</h2>
           </header>
           <nav class="burgerMenu__menu">
             <ul class="burgerMenu__menuItems">
@@ -259,8 +259,8 @@
         <div class="footer__container">
           <section class="footer__mainInfo">
             <img class="footer__logo" src="../img/logo_dmsh.svg" alt="логотип школы">
-            <h2 class="footer__title">Санкт-Петербургское государственное бюджетное учреждение дополнительного образования 
-              <span class="footer__titleBold"> «Санкт-Петербургская детская музыкальная школа № 38»</span></h2>
+            <h1 class="footer__title">Санкт-Петербургское государственное бюджетное учреждение дополнительного образования 
+              <span class="footer__titleBold"> «Санкт-Петербургская детская музыкальная школа № 38»</span></h1>
           </section>
           <div class="footer__info">
             <nav class="footer__menu">
@@ -268,7 +268,7 @@
                 <li class="footer__item"><a href="./pages/sveden.html" class="footer__link">Сведения об образовательной организации</a></li>
                 <li class="footer__item"><a href="#" class="footer__link">Полезные ссылки</a></li>
                 <li class="footer__item"><a href="#" class="footer__link">Противодействие коррупции</a></li>
-                <li class="footer__item"><a href="./popupFeedback.html" class="footer__link">Обратная связь</a></li>
+                <li class="footer__item"><a href="./feedback.html" class="footer__link">Обратная связь</a></li>
                 <li class="footer__item"><a href="#" class="footer__link">Техподдержка</a></li>
               </ul>
             </nav>
@@ -295,21 +295,21 @@
           <a href="#" target="_self" class="menu__home">
             <span class="menu__homeImg"></span>
           </a>
-          <button type="button" class="menu__fontIncrease">
+          <button type="button" name="improveAccessibility" aria-label="Кнопка улучшенная доступности" class="menu__fontIncrease">
             <span class="menu__fontIncreaseImg"></span>
           </button>
-          <button type="button" class="menu__burgerMenu">
+          <button type="button"  name="openBurgerMenu" aria-label="Открыть бургер меню" class="menu__burgerMenu">
             <span class="menu__burgerMenuImg"></span>
           </button>
-          <button type="button" class="menu__closeMenu">
+          <button type="button" name="closeBurgerMenu" aria-label="Закрыть бургер меню" class="menu__closeMenu">
             <span class="menu__closeMenuImg"></span>
           </button>
         </div>
       </div>
 
     </div>
+    <script src="../js/index.js" defer></script>
+    <script src="../js/burgerMenu.js" defer></script>
+    <script src="../js/school-infoMenu.js" defer></script>
   </body>
-  <script src="../js/index.js" defer></script>
-  <script src="../js/burgerMenu.js" defer></script>
-  <script src="../js/school-infoMenu.js" defer></script>
 </html>

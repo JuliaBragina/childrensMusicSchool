@@ -48,6 +48,34 @@
   width: 100%;
 }
 
+.popupFeedback__error{
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 500;
+  font-family: 'Montserrat', Arial, sans-serif;
+  color:#822c26;
+  display: none;
+}
+
+.popupFeedback__hint{
+  position: absolute;
+  top: -40px;
+  left: 50px;
+  padding: 5px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+  color: #333;
+  line-height: 1.5;
+  display: none;
+}
+
+.popupFeedback__hint_active{
+  display: block;
+}
+
 .popupFeedback__label{
   position: absolute;
   top: 50%;
@@ -55,6 +83,19 @@
   transform: translateY(-50%);
   color: #888;
   pointer-events: none;
+
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 500;
+  font-family: 'Montserrat', Arial, sans-serif;
+}
+
+.popupFeedback__label_active{
+  top: 0;
+  background-color: #fff;
+
+  font-size: 10px;
+  line-height: 16px;
 }
 
 .popupFeedback__input{
@@ -69,7 +110,21 @@
   font-weight: 600;
   font-family: 'Montserrat', Arial, sans-serif;
 
-  border-color: rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.popupFeedback__input:focus {
+  outline: none;
+  border: 1px solid #000;
+  box-shadow: 1px 4px 10px 2px rgba(34, 60, 80, 0.09);
+}
+
+.popupFeedback__input:valid{
+  border-color: #268237;
+}
+
+.popupFeedback__input:invalid{
+  border-color: #822c26;
 }
 
 .popupFeedback__inputText{
@@ -80,31 +135,39 @@
    height: 100px;
 }
 
-.popupFeedback__inputBlock:focus-within .popupFeedback__label {
-  display: none;
-}
-
 .popupFeedback__buttonForm{
-   width: 100%;
-   height: 45px;
-   background-color: #268237;
-   color: #fff;
+  width: 100%;
+  height: 45px;
+  background-color: #268237;
+  color: #fff;
+  margin: 0;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 600;
+  font-family: 'Montserrat', Arial, sans-serif;
+  border: 0;
+  border-radius: 6px;
 
-   margin: 0;
-   font-size: 15px;
-   line-height: 24px;
-   font-weight: 600;
-   font-family: 'Montserrat', Arial, sans-serif;
-   border: 0;
-   border-radius: 6px;
-
-   cursor: pointer;
+  cursor: pointer;
 }
 
 .popupFeedback__buttonForm:hover{
   background-color: #fff;
   color: #268237;
   border: 3px solid #268237;
+}
+
+.popupFeedback__buttonForm:disabled{
+  opacity: .5;
+  cursor: none;
+}
+
+.popupFeedback__message{
+  margin: 0;
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 400;
+  font-family: 'Georgis', Arial, sans-serif;
 }
  
 @media screen and (max-width: 940px) {

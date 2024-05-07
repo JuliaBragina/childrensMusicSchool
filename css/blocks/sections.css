@@ -39,27 +39,25 @@
   text-align: center;
 }
 
-.sections__button{
+.sections__link {
   width: 281px;
   height: 50px;
   background-color: #268237;
-  border: transparent;
+  border: 3px solid #268237;
   border-radius: 6px;
-
   font-size: 16px;
-  line-height: 27px;
   font-weight: 500;
   font-family: 'Montserrat', Arial, sans-serif;
-
   color: #fff;
   cursor: pointer;
-  padding: 0;
   margin: 0 auto;
-  display: block;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.sections__button:hover{
-  border: 3px solid #268237;
+.sections__link:hover{
   background-color: transparent;
   color: #268237;
 }
