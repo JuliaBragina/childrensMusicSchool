@@ -38,12 +38,6 @@
   margin: 0 auto;
 }
 
-.burgerMenu__logo{
-  width: 106px;
-  height: 92px;
-  object-fit: contain;
-}
-
 .burgerMenu__title{
   margin: 0;
   font-size: 18px;
@@ -130,7 +124,7 @@
 
 .burgerMenu__text::after{
   position: absolute;
-  top: -5px;
+  bottom: 10px;
   right: -15px;
   content: url("../../img/button_accordeon.svg");
   width: 11px;
@@ -148,11 +142,6 @@
 @media screen and (max-width: 425px) {
   .burgerMenu__container{
     width: 90%;
-  }
-
-  .burgerMenu__logo{
-    width: 70px;
-    height: 60px;
   }
 
   .burgerMenu__title{

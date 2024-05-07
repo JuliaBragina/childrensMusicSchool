@@ -16,12 +16,6 @@
   padding-bottom: 40px;
 }
 
-.footer__logo{
-  width: 170px;
-  height: 150px;
-  object-fit: contain;
-}
-
 .footer__title{
   margin: 0;
   font-size: 24px;
@@ -181,11 +175,6 @@
 
   .footer__contactInfo{
     row-gap: 15px;
-  }
-
-  .footer__logo{
-    width: 106px;
-    height: 92px;
   }
 }
 

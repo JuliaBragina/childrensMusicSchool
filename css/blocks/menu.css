@@ -18,6 +18,10 @@
   display: none;
 }
 
+.menu__homePage{
+  cursor: pointer;
+}
+
 .menu__container{
   display: flex;
   align-items: center;
@@ -59,8 +63,8 @@
   background-size: contain;
   background-color: transparent;
   border: 0;
-  width: 64px;
-  height: 21px;
+  width: 50px;
+  height: 16px;
   cursor: pointer;
 }
 
@@ -228,7 +232,7 @@
   }
 
   .menu__item_theme_white{
-    font-size: 18px;
+    font-size: 16px;
     line-height: 22px;
   }
 }
@@ -262,7 +266,6 @@
   }
 
   .title__menu{
-    cursor: pointer;
     font-size: 18px;
     line-height: 26px;
     font-weight: 600;
