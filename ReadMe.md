@@ -19,3 +19,4 @@ Children's Music School - это макет для сайта, который б
 
 ## GitHub Pages:
 
+https://juliabragina.github.io/childrensMusicSchool/
