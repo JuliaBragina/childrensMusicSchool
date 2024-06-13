@@ -1,6 +1,25 @@
 .header{
   width: 100%;
-  margin-bottom: 80px;
+  margin-bottom: 300px;
+}
+
+@media screen and (max-width: 1024px) {
+  .header{
+    margin-bottom: 250px;
+  }
+}
+
+@media screen and (max-width: 578px) {
+  .header{
+    margin-bottom: 350px;
+  }
+}
+
+
+@media screen and (max-width: 400px) {
+  .header{
+    margin-bottom: 250px;
+  }
 }
 
 .header_theme_white{
