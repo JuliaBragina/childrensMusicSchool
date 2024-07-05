@@ -16,11 +16,6 @@
   border-radius: 6px;
   padding: 10px 10px;
   box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-end;
-
   cursor: pointer;
   
   -webkit-transition: all 0.3s ease;;
@@ -31,9 +26,16 @@
 
 .achivments__link{
   text-decoration: none;
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
 }
 
-.achivments__subTitle{
+.achivments__text{
   margin: 0;
   font-size: 20px;
   line-height: 24px;
@@ -43,7 +45,7 @@
   color: #000;
 }
 
-.achivments__subSubTitle{
+.achivments__subTitle{
   margin: 0;
   font-size: 80px;
   line-height: 91px;
@@ -58,11 +60,11 @@
   box-shadow: 0 0 20px 6px rgba(113, 113, 113, 0.5);
 }
 
-.achivments__block:hover .achivments__subSubTitle{
+.achivments__block:hover .achivments__subTitle{
   color: #fff;
 }
 
-.achivments__block:hover .achivments__subTitle{
+.achivments__block:hover .achivments__text{
   color: #fff;
 }
 
@@ -75,12 +77,12 @@
     height: 165px;
   }
 
-  .achivments__subSubTitle{
+  .achivments__subTitle{
     font-size: 64px;
     line-height: 73px;
   }
 
-  .achivments__subTitle{
+  .achivments__text{
     font-size: 18px;
     line-height: 22px;
   }
@@ -91,12 +93,12 @@
     height: 130px;
   }
 
-  .achivments__subSubTitle{
+  .achivments__subTitle{
     font-size: 48px;
     line-height: 55px;
   }
 
-  .achivments__subTitle{
+  .achivments__text{
     font-size: 16px;
     line-height: 20px;
   }
@@ -117,12 +119,12 @@
     height: 178px;
   }
 
-  .achivments__subSubTitle{
+  .achivments__subTitle{
     font-size: 64px;
     line-height: 73px;
   }
 
-  .achivments__subTitle{
+  .achivments__text{
     font-size: 18px;
     line-height: 22px;
   }
